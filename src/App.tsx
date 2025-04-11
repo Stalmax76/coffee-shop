@@ -1,13 +1,13 @@
-import Button from './components/Button';
-
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Main from './components/Main';
 function App() {
   return (
-    <>
-      <div>
-        <h1>The exemple of text for test! </h1>
-        <Button />
-      </div>
-    </>
+    <div className='wrapper'>
+      <Header />
+      <Main />
+      <Footer />
+    </div>
   );
 }
 
