@@ -1,0 +1,14 @@
+@use "sass:math";
+@import "scss/reset";
+@import "scss/main";
+@import "scss/variables";
+@import "scss/functions";
+@import "scss/mixins";
+
+body {
+  background-color: var(--color-white);
+  font-family: var(--main-font);
+  color: var(--color-black);
+  font-size: toRem(24);
+  line-height: 1.5;
+}
