@@ -1,6 +1,18 @@
 @use "../../scss/abstracts/functions" as *;
 @use "../../scss/abstracts/variables" as *;
 
+// ================== logo ==================
+.logo {
+   block-size: toRem(40);
+   inline-size: toRem(40);
+   aspect-ratio: 1/1;
+   padding: toRem(5);
+   img {
+      width: 100%;
+      object-fit: cover;
+   }
+}
+
 // ================== button ==================
 .btn {
    width: toRem(120);

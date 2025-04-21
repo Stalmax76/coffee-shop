@@ -1,10 +1,9 @@
-import Button from '../UI/Button';
+import Logo from '../UI/Logo';
 
 const Main = () => {
   return (
     <main className='main'>
-      <h1>Main Content</h1>
-      <Button label='Click Me' onClick={() => alert('Button Clicked!')} />
+      <Logo />
     </main>
   );
 };

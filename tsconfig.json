@@ -2,9 +2,11 @@
   "files": [],
   "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
   "compilerOptions": {
-    "baseUrl": "./",
+    "types": ["node"],
+    "baseUrl": "./src",
     "paths": {
-      "@img": ["src/assets/images/*"]
+      "@img/*": ["assets/images/*"],
+      "@scss/*": ["scss/*"]
     }
   }
 }
