@@ -4,7 +4,6 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@styles/*": ["src/scss/*"],
       "@img": ["src/assets/images/*"]
     }
   }

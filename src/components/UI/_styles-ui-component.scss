@@ -1,0 +1,33 @@
+@use "../../scss/abstracts/functions" as *;
+@use "../../scss/abstracts/variables" as *;
+
+// ================== button ==================
+.btn {
+   width: toRem(120);
+   height: toRem(30);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: toRem(3);
+   border: toRem(1) solid var(--color-white);
+   color: var(--color-white);
+   font-size: toRem(14);
+   font-weight: 700;
+   line-height: normal;
+   box-shadow: 0px 4px 4px 0px var(--color-black-25);
+
+   transition:
+      background-color 0.3s,
+      color 0.3s,
+      box-shadow 0.3s;
+   @media (max-width: toEm(768)) {
+      width: 100%;
+   }
+   @media (any-hover: hover) {
+      &:hover {
+         background-color: var(--color-white);
+         color: var(--color-black);
+         box-shadow: 0px 4px 4px 0px var(--color-black-50);
+      }
+   }
+}

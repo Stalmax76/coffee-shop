@@ -1,0 +1,16 @@
+body {
+   background-color: green;
+   font-family: var(--main-font);
+   color: var(--color-black);
+   font-size: toRem(24);
+   line-height: 1.5;
+}
+.wrapper {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   overflow: hidden;
+   & > .main {
+      flex-grow: 1;
+   }
+}
