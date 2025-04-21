@@ -1,0 +1,28 @@
+@use "@scss/abstracts/_functions.scss" as *;
+@use "@scss/abstracts/_variables.scss" as *;
+
+.title {
+   padding-inline: toRem(10);
+   text-align: center;
+   &__text {
+      text-transform: capitalize;
+      line-height: normal;
+      &:not(:last-child) {
+         margin-bottom: toRem(20);
+      }
+      &.white {
+         color: var(--color-white);
+      }
+      &.black {
+         color: var(--color-black);
+      }
+      &.page {
+         font-size: toRem(40);
+         font-weight: 700;
+      }
+      &.article {
+         font-size: toRem(24);
+         font-weight: 400;
+      }
+   }
+}

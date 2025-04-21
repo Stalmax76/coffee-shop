@@ -1,9 +1,16 @@
-import Logo from '../UI/Logo';
+import Title from '../common/Title';
 
 const Main = () => {
   return (
     <main className='main'>
-      <Logo />
+      <div>
+        <Title
+          variant='page'
+          text='Welcome to our coffee shop 👋! And to do me very happy!'
+          color='black'
+          withDecor
+        />
+      </div>
     </main>
   );
 };
