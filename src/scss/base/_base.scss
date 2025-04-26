@@ -1,9 +1,9 @@
 body {
-   background-color: green;
    font-family: var(--main-font);
    color: var(--color-black);
-   font-size: toRem(24);
-   line-height: 1.5;
+   font-size: toRem(14);
+   line-height: normal;
+   font-weight: 400;
 }
 .wrapper {
    display: flex;

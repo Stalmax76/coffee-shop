@@ -10,7 +10,8 @@
     "baseUrl": "./src",
     "paths": {
       "@img/*": ["assets/images/*"],
-      "@scss/*": ["scss/*"]
+      "@scss/*": ["scss/*"],
+      "@components/*": ["components/*"]
     },
 
     /* Bundler mode */
