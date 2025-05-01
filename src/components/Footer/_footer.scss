@@ -4,6 +4,12 @@
 .footer {
    padding-block: toRem(30) toRem(20);
    background-color: var(--color-white);
+   @media (max-width: toEm(768)) {
+      padding-block: toRem(20) toRem(10);
+   }
+   @media (max-width: toEm(480)) {
+      padding-block: toRem(10) toRem(5);
+   }
    &__container {
       max-width: toRem(1174);
       margin-inline: auto;
@@ -13,6 +19,9 @@
       align-items: center;
       justify-content: center;
       row-gap: toRem(30);
+      @media (max-width: toEm(768)) {
+         row-gap: toRem(20);
+      }
    }
    &__content {
       display: flex;
