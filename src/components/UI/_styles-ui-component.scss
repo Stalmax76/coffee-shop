@@ -3,13 +3,13 @@
 
 // ================== logo ==================
 .logo {
-   display: inline-flex;
+   display: flex;
    justify-content: center;
    align-items: center;
-   block-size: toRem(40);
-   inline-size: toRem(40);
+   block-size: toRem(37);
+   inline-size: toRem(37);
    aspect-ratio: 1/1;
-   padding: toRem(5);
+   padding: toRem(2);
    cursor: pointer;
    transition: transform 0.3s ease-in-out;
    @media (any-hover: hover) {
