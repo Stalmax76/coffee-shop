@@ -53,11 +53,22 @@
       line-height: normal;
       flex-shrink: 0;
       text-decoration: none;
-      transition: text-decoration 0.3s;
-      @media (any-hover: hover) {
-         &:hover {
-            text-decoration: underline;
+      transition:
+         text-decoration 0.4s,
+         color 0.4s;
+      a {
+         color: var(--color-black-25);
+         @media (any-hover: hover) {
+            &:hover {
+               text-decoration: underline;
+               color: var(--color-black);
+            }
          }
+      }
+      a.active {
+         text-decoration: none;
+         font-weight: 700;
+         color: var(--color-black);
       }
    }
 }

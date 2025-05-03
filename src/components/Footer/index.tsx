@@ -1,5 +1,6 @@
 import Logo from '@components/UI/Logo';
 import { TitleDecor } from '@components/UI/TitleDecor';
+import { NavLink } from 'react-router-dom';
 import './_footer.scss';
 
 const Footer = () => {
@@ -8,17 +9,22 @@ const Footer = () => {
       <div className='footer__container'>
         <div className='footer__content'>
           <div className='footer__logo'>
-            <Logo color='black' />
+            <NavLink to='/'>
+              {' '}
+              <Logo color='black' />
+            </NavLink>
           </div>
           <div className='footer__items'>
             <div className='footer__item'>
-              <a href='#'>Coffee house</a>
+              <NavLink to='.' end>
+                Coffee house
+              </NavLink>
             </div>
             <div className='footer__item'>
-              <a href='#'>Our coffee</a>
+              <NavLink to='OurCoffee'>Our coffee</NavLink>
             </div>
             <div className='footer__item'>
-              <a href='#'>For your pleasure</a>
+              <NavLink to='Pleasure'>For your pleasure</NavLink>
             </div>
           </div>
         </div>

@@ -65,6 +65,10 @@
                   text-decoration: underline;
                }
             }
+            &.active {
+               text-decoration: underline;
+               color: var(--color-gray);
+            }
          }
       }
    }

@@ -1,13 +1,23 @@
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Main from './components/Main';
+import MainLayout from '@components/layouts/MainLayout';
+import Home from '@components/pages/Home';
+import NotFound from '@components/pages/NotFaund';
+import OurCoffee from '@components/pages/OurCoffee';
+import Pleasur from '@components/pages/Pleasur';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
-    <div className='wrapper'>
-      <Header />
-      <Main />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className='app'>
+        <Routes>
+          <Route path='/' element={<MainLayout />}>
+            <Route index element={<Home />} />
+            <Route path='ourCoffee' element={<OurCoffee />} />
+            <Route path='pleasure' element={<Pleasur />} />
+            <Route path='*' element={<NotFound />} />
+          </Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
