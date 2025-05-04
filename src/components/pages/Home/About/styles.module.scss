@@ -1,0 +1,31 @@
+@use "@scss/abstracts/_functions.scss" as *;
+@use "@scss/abstracts/_variables.scss" as *;
+
+.about {
+   padding-block: toRem(80) toRem(100);
+   @media (max-width: toEm(992)) {
+      padding-block: toRem(40) toRem(60);
+   }
+   @media (max-width: toEm(768)) {
+      padding-block: toRem(20) toRem(40);
+   }
+   &__container {
+      max-inline-size: toRem(610);
+      padding-inline: toRem(15);
+      margin-inline: auto;
+   }
+   &__header {
+      margin-block-end: toRem(40);
+      @media (max-width: toEm(768)) {
+         margin-block-end: toRem(20);
+      }
+   }
+   &__content {
+      text-align: center;
+      font-size: toRem(14);
+      line-height: normal;
+      p:not(:last-child) {
+         margin-block-end: toRem(15);
+      }
+   }
+}

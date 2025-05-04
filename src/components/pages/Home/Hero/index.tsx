@@ -16,7 +16,7 @@ const Hero = () => {
       <div className={styles.hero__container}>
         <Title
           variant='page'
-          text='Find the perfect blend'
+          text='Everything You Love About Coffee'
           withDecor
           color='white'
           parrentClass={styles.hero__title}

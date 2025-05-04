@@ -5,14 +5,39 @@
    left: 0;
    width: 100%;
    z-index: 100;
+   background-color: transparent;
    padding-block: toRem(30);
+   transition: background-color 0.3s;
+   &::before {
+      content: "";
+      position: absolute;
+      visibility: hidden;
+      inset: 0;
+      z-index: 5;
+      background-color: var(--color-black-25);
+      backdrop-filter: blur(toRem(5));
+   }
+   &--scrolled {
+      // background-color: var(--color-black-25);
+      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+      backdrop-filter: blur(toRem(5));
+      z-index: 10;
+      box-shadow: 0 toRem(8) toRem(16) rgba(0, 0, 0, 0.2);
+
+      &::before {
+         visibility: visible;
+      }
+   }
    @media (max-width: toEm(768)) {
       padding-block: toRem(15);
    }
    @media (max-width: toEm(480)) {
       padding-block: toRem(10);
    }
+
    &__container {
+      position: relative;
+      z-index: 100;
       max-width: toRem(1174);
       padding-inline: toRem(15);
       margin-inline: auto;
