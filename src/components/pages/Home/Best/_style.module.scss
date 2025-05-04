@@ -1,0 +1,42 @@
+@use "@scss/abstracts/_functions.scss" as *;
+@use "@scss/abstracts/_variables.scss" as *;
+
+.best {
+   padding-block: toRem(90) toRem(110);
+   background-image: url("@img/home/products/bg.webp");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   @media (max-width: toEm(992)) {
+      padding-block: toRem(60) toRem(80);
+   }
+   @media (max-width: toEm(768)) {
+      padding-block: toRem(40) toRem(60);
+   }
+   &__container {
+      max-inline-size: toRem(830);
+      padding-inline: toRem(15);
+      margin-inline: auto;
+   }
+   &__header {
+      margin-block-end: toRem(40);
+      @media (max-width: toEm(768)) {
+         margin-block-end: toRem(20);
+      }
+   }
+   &__items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(toRem(220), 1fr));
+      gap: toRem(70);
+      justify-items: center;
+      align-content: center;
+      transition: transform 0.3s ease-in-out;
+
+      @media (max-width: toEm(992)) {
+         gap: toRem(40);
+      }
+      @media (max-width: toEm(768)) {
+         gap: toRem(20);
+      }
+   }
+}

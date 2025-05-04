@@ -8,14 +8,22 @@
    align-items: center;
    row-gap: toRem(14);
    padding: toRem(20);
-   min-width: toRem(220);
+   max-width: toRem(220);
    max-height: toRem(260);
    border-radius: 8px;
+
    // overflow: hidden;
 
    &.promo {
-      // background-color: var(--color-gray);
-      background-color: green;
+      background-color: var(--color-gray);
+      transition: background-color 0.3s ease-in-out;
+      filter: drop-shadow(toRem(5) toRem(5) toRem(15) var(--color-black-25));
+      @media (any-hover: hover) {
+         &:hover {
+            background-color: var(--color-white);
+         }
+      }
+      // background-color: green;
    }
    &.default {
       background-color: var(--color-white);
@@ -23,9 +31,15 @@
    }
    &__image {
       max-width: 100%;
-      aspect-ratio: 170 / 115;
+      height: toRem(130);
+      // aspect-ratio: 151/130;
       flex: 1 1 auto;
       overflow: hidden;
+      @media (any-hover: hover) {
+         &:hover {
+            transform: scale(1.02);
+         }
+      }
 
       img {
          width: 100%;
