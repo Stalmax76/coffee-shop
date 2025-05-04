@@ -9,6 +9,9 @@
       line-height: normal;
       &:not(:last-child) {
          margin-bottom: toRem(20);
+         @media (max-width(toEm(768))) {
+            margin-bottom: toRem(10);
+         }
       }
       &.white {
          color: var(--color-white);
@@ -19,6 +22,12 @@
       &.page {
          font-size: toRem(40);
          font-weight: 700;
+         @media (max-width(toEm(992))) {
+            font-size: toRem(36);
+         }
+         @media (max-width(toEm(768))) {
+            font-size: toRem(28);
+         }
       }
       &.article {
          font-size: toRem(24);

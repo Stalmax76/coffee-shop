@@ -10,6 +10,7 @@ type TitleProps = {
   text?: string;
   withDecor?: boolean;
   children?: React.ReactNode;
+  parrentClass?: string;
 };
 
 const Title: React.FC<TitleProps> = ({
@@ -18,10 +19,11 @@ const Title: React.FC<TitleProps> = ({
   text,
   withDecor = true,
   children,
+  parrentClass = '',
 }) => {
   const tag: HeadingTag = variant === 'page' ? 'h1' : 'h2';
   return (
-    <div className={styles.title}>
+    <div className={styles.title + (parrentClass ? ` ${parrentClass}` : '')}>
       {React.createElement(
         tag,
         { className: [styles.title__text, styles[color], styles[variant]].join(' ') },
