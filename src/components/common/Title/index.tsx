@@ -1,6 +1,8 @@
+import { TitleDecor } from '@components/UI/TitleDecor';
+import clsx from 'clsx';
 import React from 'react';
-import { TitleDecor } from '../../UI/TitleDecor';
-import styles from './style.module.scss';
+import '../_common.scss';
+// import styles from './style.module.scss';
 
 type HeadingTag = 'h1' | 'h2';
 
@@ -23,11 +25,10 @@ const Title: React.FC<TitleProps> = ({
 }) => {
   const tag: HeadingTag = variant === 'page' ? 'h1' : 'h2';
   return (
-    <div className={styles.title + (parrentClass ? ` ${parrentClass}` : '')}>
+    <div className={clsx('title', parrentClass)}>
       {React.createElement(
         tag,
-        { className: [styles.title__text, styles[color], styles[variant]].join(' ') },
-        // { className: `${styles.title__text} ${styles[color]} ${styles[variant]}` },
+        { className: clsx('title__text', color, variant) },
         text ?? children
       )}
       {withDecor && <TitleDecor color={color} />}

@@ -1,6 +1,7 @@
 import imgUrl from '@img/about/product.webp';
 import clsx from 'clsx';
-import styles from './_style.module.scss';
+import '../_common.scss';
+// import styles from './_style.module.scss';
 
 export type CardVariant = 'default' | 'promo';
 export type ProductCardProps = {
@@ -21,15 +22,15 @@ const ProductCard: React.FC<ProductCardProps> = ({
   className = '',
 }) => {
   return (
-    <article className={clsx(`${styles.productCard}  ${styles[variant]}`, className)}>
-      <div className={styles.productCard__image}>
+    <article className={clsx('productCard', variant, className)}>
+      <div className={'productCard__image'}>
         <img src={image} alt='Image of product' />
       </div>
-      <div className={styles.productCard__content}>
-        <h3 className={styles.productCard__title}>{title}</h3>
-        <div className={styles.productCard__info}>
-          {country && <p className={styles.productCard__country}>{country}</p>}
-          <p className={styles.productCard__price}>{price}</p>
+      <div className={'productCard__content'}>
+        <h3 className={'productCard__title'}>{title}</h3>
+        <div className={'productCard__info'}>
+          {country && <p className={'productCard__country'}>{country}</p>}
+          <p className={'productCard__price'}>{price}</p>
         </div>
       </div>
     </article>

@@ -1,6 +1,77 @@
 @use "@scss/abstracts/_functions.scss" as *;
 @use "@scss/abstracts/_variables.scss" as *;
 
+// =================== Header Page ============
+
+.headerPage {
+   padding-top: toRem(135);
+   position: relative;
+   min-block-size: toRem(260);
+
+   &__bg {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1440/260;
+      // max-height: toRem(260);
+      img {
+         width: 100%;
+         height: 100%;
+         object-fit: cover;
+      }
+   }
+   &__container {
+      position: relative;
+      padding-inline: toRem(15);
+      z-index: 1;
+      padding-bottom: toRem(80);
+   }
+   &__title {
+   }
+}
+//  ============================ title ====================================
+.title {
+   padding-inline: toRem(10);
+   text-align: center;
+   &__text {
+      text-transform: capitalize;
+      line-height: normal;
+      &:not(:last-child) {
+         margin-bottom: toRem(20);
+         @media (max-width: toEm(768)) {
+            margin-bottom: toRem(10);
+         }
+      }
+   }
+   .page {
+      font-size: toRem(40);
+      font-weight: 700;
+   }
+   .article {
+      font-size: toRem(24);
+      font-weight: 400;
+   }
+   .white {
+      color: var(--color-white);
+   }
+   .black {
+      color: var(--color-black);
+   }
+   @media (max-width: toEm(992)) {
+      .page {
+         font-size: toRem(36);
+      }
+   }
+   @media (max-width: toEm(768)) {
+      .page {
+         font-size: toRem(28);
+      }
+   }
+}
+
+//  ======================== Product Card =================
 .productCard {
    display: inline-flex;
    flex-direction: column;
