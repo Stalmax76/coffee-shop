@@ -1,12 +1,93 @@
 @use "@scss/abstracts/_functions.scss" as *;
 @use "@scss/abstracts/_variables.scss" as *;
 
+// =================== Page Description =================
+.pageDescription {
+   padding-block: toRem(70) toRem(57);
+   position: relative;
+   @media (max-width: toEm(992)) {
+      padding-block: toRem(50) toRem(40);
+   }
+   @media (max-width: toEm(768)) {
+      padding-block: toRem(30) toRem(20);
+   }
+
+   &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: toRem(240);
+      height: toRem(1);
+      background-color: var(--color-black);
+      @media (max-width: toEm(768)) {
+         width: toRem(150);
+      }
+   }
+   &__image {
+      flex-shrink: 1;
+      flex-basis: toRem(272);
+      aspect-ratio: 272/355;
+      img {
+         width: 100%;
+         object-fit: cover;
+      }
+   }
+   &__container {
+      padding-inline: toRem(15);
+      max-inline-size: toRem(820);
+      margin-inline: auto;
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      column-gap: toRem(80);
+      @media (max-width: toEm(992)) {
+         column-gap: toRem(60);
+      }
+      @media (max-width: toEm(768)) {
+         flex-direction: column;
+         align-items: center;
+         row-gap: toRem(30);
+      }
+   }
+
+   &__content {
+      padding-block: toRem(14);
+      align-self: start;
+      flex: 1 1 toRem(300);
+      max-width: toRem(346);
+      @media (max-width: toEm(768)) {
+         align-self: center;
+      }
+   }
+   &__text {
+      line-height: normal;
+      text-align: left;
+      &.text--center {
+         text-align: center;
+      }
+
+      p {
+         margin-bottom: toRem(14);
+      }
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+}
+
 // =================== Header Page ============
 
 .headerPage {
-   padding-top: toRem(135);
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
    position: relative;
-   min-block-size: toRem(260);
+   min-block-size: toRem(260); /* 260/1440 */
+   @media (max-width: toEm(992)) {
+      min-block-size: toRem(200); /* 200/1440 */
+   }
 
    &__bg {
       position: absolute;
@@ -15,7 +96,7 @@
       width: 100%;
       height: 100%;
       aspect-ratio: 1440/260;
-      // max-height: toRem(260);
+
       img {
          width: 100%;
          height: 100%;
@@ -27,7 +108,11 @@
       padding-inline: toRem(15);
       z-index: 1;
       padding-bottom: toRem(80);
+      @media (max-width: toEm(992)) {
+         padding-bottom: toRem(40);
+      }
    }
+
    &__title {
    }
 }
@@ -52,6 +137,7 @@
    .article {
       font-size: toRem(24);
       font-weight: 400;
+      text-transform: none;
    }
    .white {
       color: var(--color-white);
