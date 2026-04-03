@@ -3,11 +3,14 @@
   "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
   "compilerOptions": {
     "lib": ["DOM", "DOM.Iterable"],
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
 
     "baseUrl": "./src",
     "paths": {
       "@img/*": ["assets/images/*"],
-      "@scss/*": ["scss/*"]
+      "@scss/*": ["scss/*"],
+      "@data/*": ["data/*"]
     }
   }
 }

@@ -1,6 +1,6 @@
 import MainLayout from '@components/layouts/MainLayout';
 import Home from '@components/pages/Home';
-import NotFound from '@components/pages/NotFaund';
+import NotFound from '@components/pages/NotFound';
 import OurCoffee from '@components/pages/OurCoffee';
 import Pleasur from '@components/pages/Pleasur';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';

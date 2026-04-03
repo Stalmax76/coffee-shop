@@ -11,7 +11,8 @@
     "paths": {
       "@img/*": ["assets/images/*"],
       "@scss/*": ["scss/*"],
-      "@components/*": ["components/*"]
+      "@components/*": ["components/*"],
+      "@data/*": ["data/*"]
     },
 
     /* Bundler mode */

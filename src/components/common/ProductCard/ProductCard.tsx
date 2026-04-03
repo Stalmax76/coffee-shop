@@ -1,5 +1,6 @@
 import imgUrl from '@img/about/product.webp';
 import clsx from 'clsx';
+import { Link } from 'react-router-dom';
 import '../_common.scss';
 // import styles from './_style.module.scss';
 
@@ -11,6 +12,7 @@ export type ProductCardProps = {
   country?: string;
   price: string;
   className?: string;
+  link?: string;
 };
 
 const ProductCard: React.FC<ProductCardProps> = ({
@@ -20,19 +22,22 @@ const ProductCard: React.FC<ProductCardProps> = ({
   country,
   price,
   className = '',
+  link = '#',
 }) => {
   return (
     <article className={clsx('productCard', variant, className)}>
-      <div className={'productCard__image'}>
-        <img src={image} alt='Image of product' />
-      </div>
-      <div className={'productCard__content'}>
-        <h3 className={'productCard__title'}>{title}</h3>
-        <div className={'productCard__info'}>
-          {country && <p className={'productCard__country'}>{country}</p>}
-          <p className={'productCard__price'}>{price}</p>
+      <Link to={link} className={'productCard__link'}>
+        <div className={'productCard__image'}>
+          <img src={image} alt='Image of product' />
         </div>
-      </div>
+        <div className={'productCard__content'}>
+          <h3 className={'productCard__title'}>{title}</h3>
+          <div className={'productCard__info'}>
+            {country && <p className={'productCard__country'}>{country}</p>}
+            <p className={'productCard__price'}>{price}</p>
+          </div>
+        </div>
+      </Link>
     </article>
   );
 };

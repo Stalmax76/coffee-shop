@@ -4,12 +4,15 @@
 // =================== Page Description =================
 .pageDescription {
    padding-block: toRem(70) toRem(57);
+   margin-block-end: toRem(30);
    position: relative;
    @media (max-width: toEm(992)) {
-      padding-block: toRem(50) toRem(40);
+      padding-block: toRem(50) toRem(30);
+      margin-block-end: toRem(20);
    }
    @media (max-width: toEm(768)) {
       padding-block: toRem(30) toRem(20);
+      margin-block-end: toRem(10);
    }
 
    &::after {
@@ -55,8 +58,8 @@
    &__content {
       padding-block: toRem(14);
       align-self: start;
-      flex: 1 1 toRem(300);
-      max-width: toRem(346);
+      flex: 1 1 toRem(200);
+      // max-width: toRem(346);
       @media (max-width: toEm(768)) {
          align-self: center;
       }
@@ -64,6 +67,7 @@
    &__text {
       line-height: normal;
       text-align: left;
+
       &.text--center {
          text-align: center;
       }
@@ -186,11 +190,17 @@
       background-color: var(--color-white);
       filter: drop-shadow(toRem(5) toRem(5) toRem(15) var(--color-black-25));
    }
+   &__link {
+      display: block;
+      height: 100%;
+      cursor: pointer;
+   }
    &__image {
       max-width: 100%;
       height: toRem(130);
-      // aspect-ratio: 151/130;
-      flex: 1 1 auto;
+      aspect-ratio: 151/130;
+      margin-inline: auto;
+      // flex: 1 1 auto;
       overflow: hidden;
       @media (any-hover: hover) {
          &:hover {
