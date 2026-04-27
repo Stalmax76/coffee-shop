@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
-import { Suspense, lazy } from 'react';
+import { lazy } from 'react';
 
-import Preloader from '@components/UI/Preloader';
 import MainLayout from '@components/layouts/MainLayout';
 
 // Lazy-loaded pages
@@ -12,15 +11,13 @@ const NotFound = lazy(() => import('@components/pages/NotFound'));
 
 export const AppRouter = () => {
 	return (
-		<Suspense fallback={<Preloader />}>
-			<Routes>
-				<Route path='/' element={<MainLayout />}>
-					<Route index element={<Home />} />
-					<Route path='our-coffee' element={<OurCoffee />} />
-					<Route path='pleasure' element={<Pleasure />} />
-					<Route path='*' element={<NotFound />} />
-				</Route>
-			</Routes>
-		</Suspense>
+		<Routes>
+			<Route path='/' element={<MainLayout />}>
+				<Route index element={<Home />} />
+				<Route path='our-coffee' element={<OurCoffee />} />
+				<Route path='pleasure' element={<Pleasure />} />
+				<Route path='*' element={<NotFound />} />
+			</Route>
+		</Routes>
 	);
 };
