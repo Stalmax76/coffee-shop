@@ -1,0 +1,99 @@
+/* TYPOGRAPHY SYSTEM */
+
+/* Headings */
+h1 {
+	font-size: var(--heading-1);
+	font-weight: 700;
+	line-height: var(--line-height-normal);
+}
+
+h2 {
+	font-size: var(--heading-2);
+	font-weight: 400;
+	line-height: var(--line-height-normal);
+}
+
+h3 {
+	font-size: var(--heading-3);
+	font-weight: 400;
+	line-height: var(--line-height-normal);
+}
+
+h4 {
+	font-size: var(--heading-4);
+	font-weight: 400;
+	line-height: var(--line-height-normal);
+}
+
+h5 {
+	font-size: var(--heading-5);
+	font-weight: 400;
+	line-height: var(--line-height-normal);
+}
+
+h6 {
+	font-size: var(--heading-6);
+	font-weight: 400;
+	line-height: var(--line-height-normal);
+}
+
+/* Paragraphs */
+p {
+	font-size: var(--font-size-base);
+	line-height: var(--line-height-relaxed);
+	&:not(:last-child) {
+		margin-bottom: var(--space-md);
+	}
+}
+
+/* Lists */
+ul,
+ol {
+	margin-bottom: var(--space-md);
+	padding-left: var(--space-lg);
+	line-height: var(--line-height-relaxed);
+
+	li:not(:last-child) {
+		margin-bottom: var(--space-md);
+	}
+}
+
+/* Links */
+a {
+	color: var(--color-accent);
+	transition: color var(--transition-normal);
+
+	&:hover {
+		color: var(--color-accent-dark);
+	}
+}
+
+/* Strong & Emphasis */
+strong {
+	font-weight: 700;
+}
+
+em {
+	font-style: italic;
+}
+
+/* Utility text classes */
+.text-small {
+	font-size: var(--font-size-sm);
+}
+
+.text-large {
+	font-size: var(--font-size-lg);
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
