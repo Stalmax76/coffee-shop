@@ -1,4 +1,4 @@
 // @use "sass:math";
 @use './reset';
-@use './_globals.scss';
+@use './_globals.scss' as *;
 @use './_typography.scss';

@@ -7,28 +7,32 @@ import bgUrl_3x from '@img/home/hero/bg_3x.webp';
 import styles from './_styles.module.scss';
 
 const Hero = () => {
-  return (
-    <section className={styles.hero}>
-      <picture className={styles.hero__bg}>
-        <source srcSet={`${bgUrl_3x} 3x, ${bgUrl_2x} 2x, ${bgUrl_1x} 1.5x`} type='image/webp' m />
-        <img src={bgUrl} alt='background' loading='lazy' />
-      </picture>
-      <div className={styles.hero__container}>
-        <Title
-          variant='page'
-          text='Everything You Love About Coffee'
-          withDecor
-          color='white'
-          parrentClass={styles.hero__title}
-        />
-        <div className={styles.hero__description}>
-          <p>We makes every day full of energy and taste</p>
-          <p>Want to try our beans?</p>
-          <Button label='More' onClick={() => {}} />
-        </div>
-      </div>
-    </section>
-  );
+	return (
+		<section className={styles.hero}>
+			<picture className={styles.hero__bg}>
+				<source
+					srcSet={`${bgUrl_3x} 3x, ${bgUrl_2x} 2x, ${bgUrl_1x} 1.5x`}
+					type='image/webp'
+					m
+				/>
+				<img src={bgUrl} alt='background' loading='lazy' />
+			</picture>
+			<div className={styles.hero__container}>
+				<Title
+					variant='page'
+					text='Everything You Love About Coffee'
+					withDecor
+					color='white'
+					parrentClass={styles.hero__title}
+				/>
+				<div className={styles.hero__description}>
+					<p>We makes every day full of energy and taste</p>
+					<p>Want to try our beans?</p>
+					<Button label='More' onClick={() => {}} />
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default Hero;

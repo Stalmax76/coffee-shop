@@ -1,12 +1,12 @@
-@use '@styles/abstracts/_functions.scss' as *;
 .header {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
 	z-index: 100;
-	background-color: transparent;
-	padding-block: toRem(30);
+	background-color: lightblue;
+	// background-color: transparent;
+	padding-block: 1.875rem; /* 30/16 */
 	transition: background-color 0.3s;
 	&::before {
 		content: '';
@@ -15,8 +15,9 @@
 		inset: 0;
 		z-index: 5;
 		background-color: var(--color-black-25);
-		backdrop-filter: blur(toRem(5));
+		backdrop-filter: blur(3rem); /* 5/16 */
 	}
+
 	&--scrolled {
 		// background-color: var(--color-black-25);
 		background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
@@ -89,6 +90,7 @@
 			flex-shrink: 0;
 
 			a {
+				display: inline-block;
 				transition: text-decoration 0.3s;
 				@media (any-hover: hover) {
 					&:hover {

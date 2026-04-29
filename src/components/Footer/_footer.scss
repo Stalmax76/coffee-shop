@@ -1,6 +1,3 @@
-@use '@styles/abstracts/_functions.scss' as *;
-@use '@styles/abstracts/_variables.scss' as *;
-
 .footer {
 	padding-block: toRem(30) toRem(20);
 	background-color: var(--color-white);

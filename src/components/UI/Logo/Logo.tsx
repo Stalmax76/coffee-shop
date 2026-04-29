@@ -1,0 +1,25 @@
+import imgWhite from '@img/icons/logo.svg?url';
+import imgBlack from '@img/icons/logoBlack.svg?url';
+import clsx from 'clsx';
+import './_logo.scss';
+
+type LogoColor = 'white' | 'black';
+type LogoProps = {
+	color?: LogoColor;
+	href?: string;
+	className?: string;
+};
+
+const Logo: React.FC<LogoProps> = ({ color = 'white', href, className }) => {
+	const imgPath = color === 'white' ? imgWhite : imgBlack;
+
+	const content = (
+		<div className={clsx('logo', `logo--${color}`, className)}>
+			<img src={imgPath} alt='Logo' className='logo__img' />
+		</div>
+	);
+
+	return href ? <a href={href}>{content}</a> : content;
+};
+
+export default Logo;
