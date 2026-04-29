@@ -1,4 +1,4 @@
-import Logo from '@components/UI/Logo/Logo';
+import { Logo } from '@components/UI/Logo';
 import { TitleDecor } from '@components/UI/TitleDecor';
 import { NavLink } from 'react-router-dom';
 import './_footer.scss';

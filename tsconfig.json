@@ -10,6 +10,7 @@
 		"paths": {
 			"@img/*": ["assets/images/*"],
 			"@styles/*": ["styles/*"],
+			"@components/*": ["components/*"],
 			"@data/*": ["data/*"]
 		}
 	}

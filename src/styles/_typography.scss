@@ -41,21 +41,13 @@ h6 {
 p {
 	font-size: var(--font-size-base);
 	line-height: var(--line-height-relaxed);
-	&:not(:last-child) {
-		margin-bottom: var(--space-md);
-	}
 }
 
 /* Lists */
 ul,
 ol {
-	margin-bottom: var(--space-md);
-	padding-left: var(--space-lg);
-	line-height: var(--line-height-relaxed);
-
-	li:not(:last-child) {
-		margin-bottom: var(--space-md);
-	}
+	margin: 0;
+	padding: 0;
 }
 
 /* Links */

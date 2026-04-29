@@ -10,7 +10,7 @@ type LogoProps = {
 	className?: string;
 };
 
-const Logo: React.FC<LogoProps> = ({ color = 'white', href, className }) => {
+export const Logo: React.FC<LogoProps> = ({ color = 'white', href, className }) => {
 	const imgPath = color === 'white' ? imgWhite : imgBlack;
 
 	const content = (
@@ -21,5 +21,3 @@ const Logo: React.FC<LogoProps> = ({ color = 'white', href, className }) => {
 
 	return href ? <a href={href}>{content}</a> : content;
 };
-
-export default Logo;
