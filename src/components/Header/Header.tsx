@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Logo } from '@components/UI/Logo';
+import { DesktopNav } from '@components/navigation/DesktopNav';
+import { MobileNav } from '@components/navigation/MobileNav';
 import './_header.scss';
 
 export const Header = () => {
@@ -22,21 +24,13 @@ export const Header = () => {
 						<Logo />
 					</NavLink>
 				</div>
-				<nav className='header__nav'>
-					<ul className='header__nav-list'>
-						<li className='header__nav-item'>
-							<NavLink end to='.'>
-								Coffee house
-							</NavLink>
-						</li>
-						<li className='header__nav-item'>
-							<NavLink to='OurCoffee'>Our coffee</NavLink>
-						</li>
-						<li className='header__nav-item'>
-							<NavLink to='Pleasure'>For your pleasure</NavLink>
-						</li>
-					</ul>
-				</nav>
+
+				{/* DESKTOP */}
+
+				<DesktopNav />
+
+				{/* MOBILE */}
+				<MobileNav />
 			</div>
 		</header>
 	);

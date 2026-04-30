@@ -1,0 +1,72 @@
+.mobile-nav {
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	// приховуємо на десктопі
+	@media (width > 48em) {
+		display: none;
+	}
+
+	&__trigger {
+		display: flex;
+		align-items: center;
+		gap: var(--space-xxs);
+		background: none;
+		border: none;
+		color: var(--color-text);
+		font-size: var(--font-size-lg);
+		cursor: pointer;
+		// padding: var(--space-xs);
+	}
+
+	&__icon {
+		font-size: 0.8em;
+		opacity: 0.7;
+		transition: transform 0.2s ease;
+	}
+	&:has(.mobile-nav__dropdown) .mobile-nav__icon {
+		transform: rotate(120deg);
+	}
+
+	&__dropdown {
+		position: absolute;
+		left: 0;
+
+		top: calc(100% + var(--space-xxs));
+		background: var(--gray-300);
+		border-radius: var(--radius-md);
+		box-shadow: var(--shadow-md);
+		padding: var(--space-xs) 0;
+		min-inline-size: 12rem;
+		z-index: 200;
+		animation: fadeIn 0.2s ease;
+	}
+
+	&__item {
+		list-style: none;
+	}
+
+	&__link {
+		display: block;
+		padding: var(--space-sm) var(--space-md);
+		color: var(--color-gray);
+		text-decoration: none;
+		&.active {
+			text-decoration: underline;
+			color: var(--color-gray);
+			font-weight: 600;
+		}
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-4px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
