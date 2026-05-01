@@ -6,7 +6,7 @@ export const MobileNav = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const location = useLocation();
 	const pages = [
-		{ label: 'Coffee house', to: '.' },
+		{ label: 'Coffee house', to: '/' },
 		{ label: 'Our coffee', to: '/OurCoffee' },
 		{ label: 'For your pleasure', to: '/Pleasure' },
 	];

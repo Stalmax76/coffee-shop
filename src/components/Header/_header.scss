@@ -26,20 +26,20 @@
 		visibility: hidden;
 		opacity: 0;
 	}
-	// &--scrolled {
-	//	box-shadow: 0 toRem(8) toRem(16) rgba(0, 0, 0, 0.2);
-	// background-color: var(--color-black-25);
-	// background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
-	// backdrop-filter: blur(toRem(5));
-	// z-index: 10;
+	&--scrolled {
+		//	box-shadow: 0 toRem(8) toRem(16) rgba(0, 0, 0, 0.2);
+		// background-color: var(--color-black-25);
+		// background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+		// backdrop-filter: blur(toRem(5));
+		// z-index: 10;
 
-	background-color: var(--surface);
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+		background-color: var(--surface);
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 
-	// 	&::before {
-	// 		visibility: visible;
-	// 	}
-	// }
+		// 	&::before {
+		// 		visibility: visible;
+		// 	}
+	}
 
 	&__container {
 		display: flex;

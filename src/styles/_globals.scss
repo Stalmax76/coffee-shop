@@ -9,7 +9,7 @@ body {
 	background-color: var(--color-bg);
 	line-height: var(--line-height-normal);
 	font-weight: 400;
-	min-height: 100vh;
+	// min-height: 100vh;
 	overflow-x: hidden;
 	text-rendering: optimizeLegibility;
 }
@@ -19,8 +19,8 @@ body {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
-	overflow: hidden;
+	min-height: 100%;
+	overflow: clip;
 
 	& > main {
 		flex-grow: 1;
