@@ -1,6 +1,6 @@
 import { Title } from '@components/UI/Title';
 import { Subtitle } from '@components/UI/Subtitle';
-// import Button from '@components/UI/Button';
+import { Button } from '@components/UI/Button';
 import bgUrl from '@img/home/hero/bg.webp';
 import bgUrl_1x from '@img/home/hero/bg_1.5x.webp';
 import bgUrl_2x from '@img/home/hero/bg_2x.webp';
@@ -21,9 +21,10 @@ export const Hero = () => {
 				<Subtitle color='white' tag='p' noSpacing>
 					We makes every day full of energy and taste
 				</Subtitle>
-				<Subtitle>Want to try our beans?</Subtitle>
-
-				{/* <Button label='More' onClick={() => {}} /> */}
+				<Subtitle color='gray' tag='p'>
+					Want to try our beans?
+				</Subtitle>
+				<Button variant='primary'>More</Button>
 			</div>
 		</section>
 	);
