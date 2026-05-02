@@ -12,11 +12,15 @@
 	&__cards {
 		max-width: 70%;
 		margin-inline: auto;
+		padding-inline: clamp(0.3rem, 0.3rem + 1vw, 1rem);
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr));
 		gap: clamp(1.5rem, 0.5rem + 1vw, 4.375rem);
 		justify-items: center;
 		justify-content: center;
 		transition: transform 0.3s ease-in-out;
+		@media (width < 800px) {
+			max-width: 100%;
+		}
 	}
 }
