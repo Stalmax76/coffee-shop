@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { TitleDecor } from '@components/UI/TitleDecor';
 import './_title.scss';
 
 type TitleProps = {
@@ -29,7 +30,7 @@ export const Title = ({
 				)}>
 				{children}
 			</Tag>
-			{withDecor && <div className={clsx('title__decor', `title__decor--${color}`)} />}
+			{withDecor && <TitleDecor color={color} />}
 		</>
 	);
 };

@@ -1,4 +1,5 @@
 import { Title } from '@components/UI/Title';
+import { Subtitle } from '@components/UI/Subtitle';
 // import Button from '@components/UI/Button';
 import bgUrl from '@img/home/hero/bg.webp';
 import bgUrl_1x from '@img/home/hero/bg_1.5x.webp';
@@ -14,14 +15,15 @@ export const Hero = () => {
 				<img src={bgUrl} alt='background' loading='lazy' />
 			</picture>
 			<div className='hero__container'>
-				<Title tag='h1' color='white'>
+				<Title tag='h1' color='white' withDecor>
 					Everything You Love About Coffee
 				</Title>
-				{/* <div className={styles.hero__description}>
-					<p>We makes every day full of energy and taste</p>
-					<p>Want to try our beans?</p>
-					<Button label='More' onClick={() => {}} />
-				</div> */}
+				<Subtitle color='white' tag='p' noSpacing>
+					We makes every day full of energy and taste
+				</Subtitle>
+				<Subtitle>Want to try our beans?</Subtitle>
+
+				{/* <Button label='More' onClick={() => {}} /> */}
 			</div>
 		</section>
 	);
