@@ -117,46 +117,6 @@
 // 	// &__title {
 // 	// }
 // }
-//  ============================ title ====================================
-// .title {
-// 	padding-inline: toRem(10);
-// 	text-align: center;
-// 	&__text {
-// 		text-transform: capitalize;
-// 		line-height: normal;
-// 		&:not(:last-child) {
-// 			margin-bottom: toRem(20);
-// 			@media (max-width: toEm(768)) {
-// 				margin-bottom: toRem(10);
-// 			}
-// 		}
-// 	}
-// 	.page {
-// 		font-size: toRem(40);
-// 		font-weight: 700;
-// 	}
-// 	.article {
-// 		font-size: toRem(24);
-// 		font-weight: 400;
-// 		text-transform: none;
-// 	}
-// 	.white {
-// 		color: var(--color-white);
-// 	}
-// 	.black {
-// 		color: var(--color-black);
-// 	}
-// 	@media (max-width: toEm(992)) {
-// 		.page {
-// 			font-size: toRem(36);
-// 		}
-// 	}
-// 	@media (max-width: toEm(768)) {
-// 		.page {
-// 			font-size: toRem(28);
-// 		}
-// 	}
-// }
 
 //  ======================== Product Card =================
 // .productCard {

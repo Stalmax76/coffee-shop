@@ -1,4 +1,4 @@
-// import Title from '@components/common/Title';
+import { Title } from '@components/UI/Title';
 // import Button from '@components/UI/Button';
 import bgUrl from '@img/home/hero/bg.webp';
 import bgUrl_1x from '@img/home/hero/bg_1.5x.webp';
@@ -14,13 +14,9 @@ export const Hero = () => {
 				<img src={bgUrl} alt='background' loading='lazy' />
 			</picture>
 			<div className='hero__container'>
-				{/* <Title
-					variant='page'
-					text='Everything You Love About Coffee'
-					withDecor
-					color='white'
-					parrentClass={styles.hero__title}
-				/> */}
+				<Title tag='h1' color='white'>
+					Everything You Love About Coffee
+				</Title>
 				{/* <div className={styles.hero__description}>
 					<p>We makes every day full of energy and taste</p>
 					<p>Want to try our beans?</p>

@@ -34,7 +34,10 @@
 		left: 0;
 
 		top: calc(100% + var(--space-xxs));
-		background: var(--gray-300);
+		background: var(--gray-400);
+		filter: blure(10px);
+		opacity: 0.97;
+
 		border-radius: var(--radius-md);
 		box-shadow: var(--shadow-md);
 		padding: var(--space-xs) 0;

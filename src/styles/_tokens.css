@@ -49,6 +49,13 @@
     --heading-5: 1.125rem; /* 18px */
     --heading-6: 1rem; /* 16px */
 
+    --heading-1-min: 2.25rem; /* 36px */
+    --heading-2-min: 1.5rem; /* 24px */
+    --heading-3-min: 1.25rem; /* 20px */
+    --heading-4-min: 1.125rem; /* 18px */
+    --heading-5-min: 1rem; /* 16px */
+    --heading-6-min: 0.875rem; /* 14px */
+
     /* fonts */
     --font-main: "Merienda", cursive, sans-serif;
 

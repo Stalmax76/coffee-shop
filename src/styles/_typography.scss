@@ -2,38 +2,38 @@
 
 /* Headings */
 h1 {
-	font-size: var(--heading-1);
+	font-size: clamp(var(--heading-1-min), calc(var(--heading-1) * 0.5 + 2vw), var(--heading-1));
 	font-weight: 700;
 	line-height: var(--line-height-normal);
 }
 
 h2 {
-	font-size: var(--heading-2);
-	font-weight: 400;
+	font-size: clamp(var(--heading-2-min), calc(var(--heading-2) * 0.5 + 1.5vw), var(--heading-2));
+	font-weight: 700;
 	line-height: var(--line-height-normal);
 }
 
 h3 {
-	font-size: var(--heading-3);
-	font-weight: 400;
+	font-size: clamp(var(--heading-3-min), calc(var(--heading-3) * 0.5 + 1vw), var(--heading-3));
+	font-weight: 700;
 	line-height: var(--line-height-normal);
 }
 
 h4 {
 	font-size: var(--heading-4);
-	font-weight: 400;
+	font-weight: 600;
 	line-height: var(--line-height-normal);
 }
 
 h5 {
 	font-size: var(--heading-5);
-	font-weight: 400;
+	font-weight: 600;
 	line-height: var(--line-height-normal);
 }
 
 h6 {
 	font-size: var(--heading-6);
-	font-weight: 400;
+	font-weight: 500;
 	line-height: var(--line-height-normal);
 }
 
