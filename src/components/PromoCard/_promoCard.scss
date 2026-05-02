@@ -1,6 +1,5 @@
 .promoCard {
-	min-width: 230px;
-
+	// max-width: 230px;
 	border-radius: var(--radius-md);
 	background-color: var(--color-gray);
 	padding: var(--space-lg);
@@ -9,14 +8,15 @@
 	&__picture {
 		aspect-ratio: 4 / 3;
 		overflow: hidden;
-		// &:hover.promoCard__image {
-		// 	transform: scale(1.05);
-		// }
+		&:hover .promoCard__image {
+			transform: scale(1.03);
+		}
 
 		.promoCard__image {
 			inline-size: 100%;
 			block-size: 100%;
 			object-fit: contain;
+			transition: transform 0.3s ease;
 		}
 	}
 	&__content {
@@ -28,10 +28,16 @@
 	&__title {
 		font-size: var(--font-size-sm);
 		font-weight: 700;
-		letter-spacing: 0.09px;
 		color: var(--gray-900);
 		line-height: var(--line-height-normal);
 		text-wrap: balance;
+		transition:
+			opacity 0.2s ease,
+			color 0.2s ease;
+		&:hover {
+			opacity: 0.7;
+			color: var(--color-accent);
+		}
 	}
 	&__price {
 		font-weight: 600;
