@@ -1,5 +1,5 @@
 import { About } from '@components/pages/Home/About';
-// import Best from '@components/pages/Home/Best';
+import { Best } from '@components/pages/Home/Best';
 import Hero from '@components/pages/Home/Hero';
 
 export const Home = () => {
@@ -7,7 +7,7 @@ export const Home = () => {
 		<div className='home'>
 			<Hero />
 			<About />
-			{/* <Best /> */}
+			<Best />
 		</div>
 	);
 };

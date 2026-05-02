@@ -1,0 +1,21 @@
+.best {
+	padding-block: 90px 110px;
+	background-image: url('@img/home/promo/bg.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&__container {
+	}
+	&__header {
+		margin-block-end: 40px;
+	}
+	&__cards {
+		display: flex;
+		justify-content: center;
+		gap: 70px;
+		justify-items: center;
+		align-content: center;
+		transition: transform 0.3s ease-in-out;
+	}
+}

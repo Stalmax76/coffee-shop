@@ -1,0 +1,42 @@
+.promoCard {
+	min-width: 230px;
+
+	border-radius: var(--radius-md);
+	background-color: var(--color-gray);
+	padding: var(--space-lg);
+	display: grid;
+	gap: var(--space-md);
+	&__picture {
+		aspect-ratio: 4 / 3;
+		overflow: hidden;
+		// &:hover.promoCard__image {
+		// 	transform: scale(1.05);
+		// }
+
+		.promoCard__image {
+			inline-size: 100%;
+			block-size: 100%;
+			object-fit: contain;
+		}
+	}
+	&__content {
+		display: grid;
+		gap: var(--space-sm);
+		justify-items: end;
+		align-content: end;
+	}
+	&__title {
+		font-size: var(--font-size-sm);
+		font-weight: 700;
+		letter-spacing: 0.09px;
+		color: var(--gray-900);
+		line-height: var(--line-height-normal);
+		text-wrap: balance;
+	}
+	&__price {
+		font-weight: 600;
+		font-size: var(--font-size-base);
+		color: var(--gray-900);
+		line-height: var(--line-height-tight);
+	}
+}
