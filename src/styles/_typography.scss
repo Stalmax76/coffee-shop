@@ -38,9 +38,18 @@ h6 {
 }
 
 /* Paragraphs */
-p {
-	font-size: var(--font-size-base);
-	line-height: var(--line-height-relaxed);
+.text {
+	p {
+		display: block;
+		font-size: clamp(var(--font-size-sm), 0.5rem + 1vw, var(--font-size-lg));
+		line-height: clamp(var(--line-height-relaxed), 1.25rem + 0.5vw, var(--line-height-relaxed));
+		text-wrap: balance;
+		max-width: 60ch;
+		margin-inline: auto;
+	}
+	p:not(:last-child) {
+		margin-block-end: var(--space-md);
+	}
 }
 
 /* Lists */

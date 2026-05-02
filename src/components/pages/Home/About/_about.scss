@@ -1,0 +1,30 @@
+.about {
+	padding-block-start: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+	padding-block-end: clamp(3rem, 2rem + 4vw, 6.25rem);
+	background-color: var(--color-white);
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: clamp(var(--space-sm), 0.5rem + 2vw, var(--space-2xl));
+	}
+	&__header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: clamp(1rem, 0.5rem + 1vw, 2rem);
+		// margin-block-end: 40px;
+	}
+	&__content {
+	}
+	&__text {
+		line-height: var(--line-height-normal);
+		text-align: center;
+		color: black;
+		padding-inline: clamp(0.3rem, 0.3rem + 1vw, 1.25rem);
+		p {
+			text-indent: 1.5em;
+		}
+	}
+}
