@@ -5,19 +5,19 @@ import './_logo.scss';
 
 type LogoColor = 'white' | 'black';
 type LogoProps = {
-	color?: LogoColor;
-	href?: string;
-	className?: string;
+   color?: LogoColor;
+   href?: string;
+   className?: string;
 };
 
 export const Logo: React.FC<LogoProps> = ({ color = 'white', href, className }) => {
-	const imgPath = color === 'white' ? imgWhite : imgBlack;
+   const imgPath = color === 'white' ? imgWhite : imgBlack;
 
-	const content = (
-		<div className={clsx('logo', `logo--${color}`, className)}>
-			<img src={imgPath} alt='Logo' className='logo__img' />
-		</div>
-	);
+   const content = (
+      <div className={clsx('logo', `logo--${color}`, className)}>
+         <img src={imgPath} alt="Logo" className="logo__img" />
+      </div>
+   );
 
-	return href ? <a href={href}>{content}</a> : content;
+   return href ? <a href={href}>{content}</a> : content;
 };

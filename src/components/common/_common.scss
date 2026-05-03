@@ -78,46 +78,6 @@
 // 	}
 // }
 
-// =================== Header Page ============
-
-// .headerPage {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: flex-end;
-// 	position: relative;
-// 	min-block-size: toRem(260); /* 260/1440 */
-// 	@media (max-width: toEm(992)) {
-// 		min-block-size: toRem(200); /* 200/1440 */
-// 	}
-
-// 	&__bg {
-// 		position: absolute;
-// 		inset: 0;
-// 		z-index: -1;
-// 		width: 100%;
-// 		height: 100%;
-// 		aspect-ratio: 1440/260;
-
-// 		img {
-// 			width: 100%;
-// 			height: 100%;
-// 			object-fit: cover;
-// 		}
-// 	}
-// 	&__container {
-// 		position: relative;
-// 		padding-inline: toRem(15);
-// 		z-index: 1;
-// 		padding-bottom: toRem(80);
-// 		@media (max-width: toEm(992)) {
-// 			padding-bottom: toRem(40);
-// 		}
-// 	}
-
-// 	// &__title {
-// 	// }
-// }
-
 //  ======================== Product Card =================
 // .productCard {
 // 	display: inline-flex;

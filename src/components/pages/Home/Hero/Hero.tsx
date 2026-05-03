@@ -8,24 +8,24 @@ import bgUrl_3x from '@img/home/hero/bg_3x.webp';
 import './_hero.scss';
 
 export const Hero = () => {
-	return (
-		<section className='hero'>
-			<picture className='hero__bg'>
-				<source srcSet={`${bgUrl_3x} 3x, ${bgUrl_2x} 2x, ${bgUrl_1x} 1.5x`} type='image/webp' />
-				<img src={bgUrl} alt='background' loading='lazy' />
-			</picture>
-			<div className='hero__container'>
-				<Title tag='h1' color='white' withDecor>
-					Everything You Love About Coffee
-				</Title>
-				<Subtitle color='white' tag='p' noSpacing>
-					We makes every day full of energy and taste
-				</Subtitle>
-				<Subtitle color='gray' tag='p'>
-					Want to try our beans?
-				</Subtitle>
-				<Button variant='primary'>More</Button>
-			</div>
-		</section>
-	);
+   return (
+      <section className="hero">
+         <picture className="hero__bg">
+            <source srcSet={`${bgUrl_3x} 3x, ${bgUrl_2x} 2x, ${bgUrl_1x} 1.5x`} type="image/webp" />
+            <img src={bgUrl} alt="background" loading="lazy" />
+         </picture>
+         <div className="hero__container">
+            <Title tag="h1" color="white" withDecor>
+               Everything You Love About Coffee
+            </Title>
+            <Subtitle color="white" tag="p" noSpacing>
+               We makes every day full of energy and taste
+            </Subtitle>
+            <Subtitle color="gray" tag="p">
+               Want to try our beans?
+            </Subtitle>
+            <Button variant="primary">More</Button>
+         </div>
+      </section>
+   );
 };

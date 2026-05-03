@@ -1,0 +1,14 @@
+.header-page {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   min-block-size: 16.25rem; /* 260/1440 */
+   background-size: cover;
+   background-position: center;
+   padding-block-end: clamp(2.75rem, 2.5vw + 1rem, 5.25rem);
+
+   &__title {
+      text-transform: capitalize;
+      text-align: center;
+   }
+}

@@ -1,26 +1,26 @@
 .best {
-	padding-block-start: clamp(3rem, 2rem + 4vw, 5rem);
-	padding-block-end: clamp(3rem, 2rem + 4vw, 6.25rem);
-	background-image: url('@img/home/promo/bg.webp');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
+   padding-block-start: clamp(3rem, 2rem + 4vw, 5rem);
+   padding-block-end: clamp(3rem, 2rem + 4vw, 6.25rem);
+   background-image: url('@img/home/promo/bg.webp');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
 
-	&__header {
-		margin-block-end: clamp(1rem, 1rem + 4vw, 3.25rem);
-	}
-	&__cards {
-		max-width: 70%;
-		margin-inline: auto;
-		padding-inline: clamp(0.3rem, 0.3rem + 1vw, 1rem);
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr));
-		gap: clamp(1.5rem, 0.5rem + 1vw, 4.375rem);
-		justify-items: center;
-		justify-content: center;
-		transition: transform 0.3s ease-in-out;
-		@media (width < 800px) {
-			max-width: 100%;
-		}
-	}
+   &__header {
+      margin-block-end: clamp(1rem, 1rem + 4vw, 3.25rem);
+   }
+   &__cards {
+      max-width: 70%;
+      margin-inline: auto;
+      padding-inline: clamp(0.3rem, 0.3rem + 1vw, 1rem);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr));
+      gap: clamp(1.5rem, 0.5rem + 1vw, 4.375rem);
+      justify-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease-in-out;
+      @media (width < 800px) {
+         max-width: 100%;
+      }
+   }
 }
