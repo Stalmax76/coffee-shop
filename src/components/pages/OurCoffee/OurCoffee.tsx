@@ -1,7 +1,7 @@
 // import CoffeeListSection from '@components/CoffeeListSection.tsx';
-import { ArticleBlock } from '@components/content/ArticleBlock';
+import img from '@img/ourCoffe/girl.jpg?url';
 import { HeaderPage } from '@components/layouts/HeaderPage';
-// import PageDescription from '@components/common/PageDescription';
+import { PageDescription } from '@components/content/PageDescription';
 
 const textParagraphs = [
    'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.',
@@ -13,7 +13,14 @@ export const OurCoffee = () => {
    return (
       <section className="ourCoffee">
          <HeaderPage title="Our Coffee" />
-         <ArticleBlock title="About our beans" decor paragraphs={textParagraphs} />
+         <PageDescription
+            text={textParagraphs}
+            title="About our beans"
+            decor
+            image={img}
+            alt="image alt"
+         />
+         {/* <ArticleBlock title="About our beans" decor paragraphs={textParagraphs} /> */}
 
          {/* <PageDescription />
       <CoffeeListSection /> */}
