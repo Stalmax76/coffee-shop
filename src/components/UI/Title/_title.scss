@@ -6,19 +6,20 @@
 // }
 
 .title {
-	padding-inline: 0.625rem;
-	text-align: center;
-	color: var(--color-gray-100);
-	max-width: 32ch;
-	margin: 0 auto;
-	letter-spacing: 0.02em;
-	text-wrap: balance;
+   padding-inline: 0.625rem;
+   text-align: center;
+   color: var(--color-gray-100);
+   max-width: 32ch;
+   margin: 0 auto;
+   letter-spacing: 0.02em;
+   text-wrap: balance;
+   transition: color var(--transition-fast);
 
-	// opacity: 0;
-	// transform: translateY(15px);
-	// animation: fadeUp 1.3s ease forwards;
+   // opacity: 0;
+   // transform: translateY(15px);
+   // animation: fadeUp 1.3s ease forwards;
 
-	&--black {
-		color: var(--color-black);
-	}
+   &--black {
+      color: var(--color-black);
+   }
 }

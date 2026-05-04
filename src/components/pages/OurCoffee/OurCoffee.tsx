@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import img from '@img/ourCoffee/girl.jpg?url';
+import imgCard from '@img/ourCoffee/product.webp?url';
 import { HeaderPage } from '@components/layouts/HeaderPage';
 import { PageDescription } from '@components/content/PageDescription';
 import { SearchInput } from '@components/UI/SearchInput';
 import { Tabs } from '@components/content/Tabs';
+import { ProductCard } from '@components/content/ProductCard';
 
 const textParagraphs = [
    'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.',
@@ -31,6 +33,7 @@ export const OurCoffee = () => {
             active={active}
             onChange={(val) => setActive(val)}
          />
+         <ProductCard title="Single origin" country="Brazil" price={9.99} image={imgCard} />
          {/* <CoffeeListSection /> */}
       </section>
    );
