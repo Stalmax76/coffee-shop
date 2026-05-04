@@ -1,17 +1,4 @@
 {
-	"files": [],
-	"references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
-	"compilerOptions": {
-		"lib": ["DOM", "DOM.Iterable"],
-		"resolveJsonModule": true,
-		"esModuleInterop": true,
-
-		"baseUrl": "./src",
-		"paths": {
-			"@img/*": ["assets/images/*"],
-			"@styles/*": ["styles/*"],
-			"@components/*": ["components/*"],
-			"@data/*": ["data/*"]
-		}
-	}
+   "files": [],
+   "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
 }

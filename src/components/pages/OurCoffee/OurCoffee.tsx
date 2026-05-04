@@ -1,7 +1,7 @@
-// import CoffeeListSection from '@components/CoffeeListSection.tsx';
 import img from '@img/ourCoffee/girl.jpg?url';
 import { HeaderPage } from '@components/layouts/HeaderPage';
 import { PageDescription } from '@components/content/PageDescription';
+import { SearchInput } from '@components/UI/SearchInput';
 
 const textParagraphs = [
    'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.',
@@ -20,10 +20,10 @@ export const OurCoffee = () => {
             image={img}
             alt="image alt"
          />
-         {/* <ArticleBlock title="About our beans" decor paragraphs={textParagraphs} /> */}
+         {<></>}
+         <SearchInput id="serch" value="" onChange={() => {}} />
 
-         {/* <PageDescription />
-      <CoffeeListSection /> */}
+         {/* <CoffeeListSection /> */}
       </section>
    );
 };

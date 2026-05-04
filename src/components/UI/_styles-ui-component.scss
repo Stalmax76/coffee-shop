@@ -1,32 +1,3 @@
-// ================== SearchInput ==================
-// .searchInput {
-// 	display: flex;
-// 	justify-content: center;
-// 	align-items: center;
-// 	column-gap: toRem(19);
-// 	padding-inline: toRem(15);
-// 	padding-block: toRem(10);
-// 	&__label {
-// 		flex-shrink: 0;
-// 	}
-// 	&__input {
-// 		color: var(--color-black-50);
-// 		font-size: toRem(12);
-// 		line-height: normal;
-// 		font-weight: 400;
-// 		padding: toRem(6) toRem(36);
-// 		flex: 1 0 toRem(180);
-// 		max-width: toRem(250);
-// 		background-color: var(--color-white);
-// 		box-shadow: toRem(4) toRem(4) toRem(20) toRem(0) var(--color-black-25);
-// 		border-radius: toRem(4);
-
-// 		&:focus {
-// 			outline: none;
-// 		}
-// 	}
-// }
-
 // ===================== tab =====================
 // .tab {
 // 	background-color: var(--color-white);
