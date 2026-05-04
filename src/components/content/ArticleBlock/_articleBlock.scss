@@ -1,0 +1,16 @@
+.text-block {
+   padding-block-start: clamp(var(--space-xs), 0.5rem + 1vw, var(--space-sm));
+   color: black;
+
+   &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: clamp(var(--space-md), 0.5rem + 1vw, var(--space-lg));
+   }
+   &__text {
+      max-inline-size: 60ch;
+      text-align: center;
+      padding-inline: clamp(var(--space-xxs), 0.3rem + 1vw, var(--space-sm));
+   }
+}

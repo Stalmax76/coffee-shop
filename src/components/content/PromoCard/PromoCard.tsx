@@ -1,4 +1,4 @@
-import Price from '../UI/Price/Price';
+import Price from '@components/UI/Price';
 
 import './_promoCard.scss';
 

@@ -1,5 +1,5 @@
 import { Title } from '@components/UI/Title';
-import { PromoCard } from '@components/PromoCard';
+import { PromoCard } from '@components/content/PromoCard';
 import imgUrl_1 from '@img/home/promo/01.webp';
 
 import imgUrl_2 from '@img/home/promo/02.webp';
