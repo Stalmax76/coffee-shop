@@ -9,64 +9,78 @@
    {
       "id": 2,
       "image": "@img/home/products/03.webp",
-      "title": "LAVAZZA Espresso 500g",
-      "price": 4.49,
-      "country": "Italy"
+      "title": "SEGAFREDO Intermezzo 1 kg",
+      "price": 7.49,
+      "country": "Brazil"
    },
    {
       "id": 3,
       "image": "@img/home/products/03.webp",
-      "title": "KIMBO Aroma Gold 250g",
-      "price": 3.89,
-      "country": "Colombia"
+      "title": "KENYA AA Premium 500g",
+      "price": 5.99,
+      "country": "Kenya"
    },
    {
       "id": 4,
       "image": "@img/home/products/03.webp",
-      "title": "DALLMAYR Prodomo 1 kg",
-      "price": 8.25,
-      "country": "Germany"
+      "title": "KENYA Safari Roast 250g",
+      "price": 4.79,
+      "country": "Kenya"
    },
    {
       "id": 5,
       "image": "@img/home/products/03.webp",
-      "title": "TCHIBO Exclusive 500g",
-      "price": 5.99,
-      "country": "Ethiopia"
+      "title": "COLOMBIA Supremo 1 kg",
+      "price": 8.25,
+      "country": "Columbia"
    },
    {
       "id": 6,
       "image": "@img/home/products/03.webp",
-      "title": "ILLY Classico 250g",
-      "price": 6.39,
-      "country": "Italy"
+      "title": "COLOMBIA Sierra Nevada 500g",
+      "price": 5.49,
+      "country": "Columbia"
    },
    {
       "id": 7,
+      "image": "@img/home/products/03.webp",
+      "title": "AROMISTICO Coffee 1 kg",
+      "price": 6.99,
+      "country": "Brazil"
+   },
+   {
+      "id": 8,
       "image": "@img/home/products/03.webp",
       "title": "SEGAFREDO Intermezzo 1 kg",
       "price": 7.49,
       "country": "Brazil"
    },
    {
-      "id": 8,
-      "image": "@img/home/products/03.webp",
-      "title": "JACOBS Kronung 500g",
-      "price": 5.29,
-      "country": "Germany"
-   },
-   {
       "id": 9,
       "image": "@img/home/products/03.webp",
-      "title": "ME TRUNG Vietnamese 1 kg",
-      "price": 5.59,
-      "country": "Vietnam"
+      "title": "KENYA AA Premium 500g",
+      "price": 5.99,
+      "country": "Kenya"
    },
    {
       "id": 10,
       "image": "@img/home/products/03.webp",
-      "title": "STARBUCKS House Blend 250g",
-      "price": 6.79,
-      "country": "USA"
+      "title": "KENYA Safari Roast 250g",
+      "price": 4.79,
+      "country": "Kenya"
+   },
+   {
+      "id": 11,
+      "image": "@img/home/products/03.webp",
+      "title": "COLOMBIA Supremo 1 kg",
+      "price": 8.25,
+      "country": "Columbia"
+   },
+   {
+      "id": 12,
+      "image": "@img/home/products/03.webp",
+      "title": "COLOMBIA Sierra Nevada 500g",
+      "price": 5.49,
+      "country": "Columbia"
    }
 ]
