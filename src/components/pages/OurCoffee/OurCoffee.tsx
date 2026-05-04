@@ -1,5 +1,5 @@
 // import CoffeeListSection from '@components/CoffeeListSection.tsx';
-import img from '@img/ourCoffe/girl.jpg?url';
+import img from '@img/ourCoffee/girl.jpg?url';
 import { HeaderPage } from '@components/layouts/HeaderPage';
 import { PageDescription } from '@components/content/PageDescription';
 

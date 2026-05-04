@@ -24,7 +24,9 @@ export const PageDescription = ({
             <div className="page-description__image">
                <img src={image} alt={alt || ''} />
             </div>
-            <ArticleBlock title={title} paragraphs={text} decor={decor} />
+            <div className="page-description__content">
+               <ArticleBlock title={title} paragraphs={text} decor={decor} />
+            </div>
          </div>
       </section>
    );
