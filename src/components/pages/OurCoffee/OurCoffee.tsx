@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import img from '@img/ourCoffee/girl.jpg?url';
 import { HeaderPage } from '@components/layouts/HeaderPage';
 import { PageDescription } from '@components/content/PageDescription';
 import { SearchInput } from '@components/UI/SearchInput';
+import { Tabs } from '@components/content/Tabs';
 
 const textParagraphs = [
    'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.',
@@ -10,6 +12,7 @@ const textParagraphs = [
 ];
 
 export const OurCoffee = () => {
+   const [active, setActive] = useState<string>(' ');
    return (
       <section className="ourCoffee">
          <HeaderPage title="Our Coffee" />
@@ -22,7 +25,12 @@ export const OurCoffee = () => {
          />
          {<></>}
          <SearchInput id="serch" value="" onChange={() => {}} />
-
+         <Tabs
+            label="Or filter"
+            items={['brazil', 'kenya', 'columbia']}
+            active={active}
+            onChange={(val) => setActive(val)}
+         />
          {/* <CoffeeListSection /> */}
       </section>
    );
