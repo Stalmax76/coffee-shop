@@ -1,11 +1,14 @@
-import { useState } from 'react';
 import img from '@img/ourCoffee/girl.jpg?url';
 import imgCard from '@img/ourCoffee/product.webp?url';
 import { HeaderPage } from '@components/layouts/HeaderPage';
 import { PageDescription } from '@components/content/PageDescription';
-import { SearchInput } from '@components/UI/SearchInput';
-import { Tabs } from '@components/content/Tabs';
-import { ProductCard } from '@components/content/ProductCard';
+import { OurCoffeeSection } from '@components/content/OurCoffeeSection';
+import productsRaw from '@data/listCards.json';
+
+const products = productsRaw.map((p) => ({
+   ...p,
+   image: imgCard,
+}));
 
 const textParagraphs = [
    'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.',
@@ -14,7 +17,6 @@ const textParagraphs = [
 ];
 
 export const OurCoffee = () => {
-   const [active, setActive] = useState<string>(' ');
    return (
       <section className="ourCoffee">
          <HeaderPage title="Our Coffee" />
@@ -25,16 +27,15 @@ export const OurCoffee = () => {
             image={img}
             alt="image alt"
          />
-         {<></>}
-         <SearchInput id="serch" value="" onChange={() => {}} />
+         <OurCoffeeSection products={products} />
+         {/* <SearchInput id="serch" value="" onChange={() => {}} />
          <Tabs
             label="Or filter"
             items={['brazil', 'kenya', 'columbia']}
             active={active}
             onChange={(val) => setActive(val)}
          />
-         <ProductCard title="Single origin" country="Brazil" price={9.99} image={imgCard} />
-         {/* <CoffeeListSection /> */}
+         <ProductCard title="Single origin" country="Brazil" price={9.99} image={imgCard} /> */}
       </section>
    );
 };
