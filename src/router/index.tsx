@@ -6,7 +6,7 @@ import MainLayout from '@components/layouts/MainLayout';
 // Lazy-loaded pages
 const Home = lazy(() => import('@components/pages/Home'));
 const OurCoffee = lazy(() => import('@components/pages/OurCoffee'));
-// const Pleasure = lazy(() => import('@components/pages/Pleasure'));
+const Pleasure = lazy(() => import('@components/pages/Pleasure'));
 // const NotFound = lazy(() => import('@components/pages/NotFound'));
 
 export const AppRouter = () => {
@@ -16,8 +16,8 @@ export const AppRouter = () => {
             <Route path="/" element={<MainLayout />}>
                <Route index element={<Home />} />
                <Route path="our-coffee" element={<OurCoffee />} />
-               {/* <Route path="pleasure" element={<Pleasure />} />
-               <Route path="*" element={<NotFound />} /> */}
+               <Route path="pleasure" element={<Pleasure />} />
+               {/* <Route path="*" element={<NotFound />} /> */}
             </Route>
          </Routes>
       </Suspense>

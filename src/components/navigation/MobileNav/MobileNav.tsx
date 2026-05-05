@@ -8,7 +8,7 @@ export const MobileNav = () => {
    const pages = [
       { label: 'Coffee house', to: '/' },
       { label: 'Our coffee', to: '/our-coffee' },
-      { label: 'For your pleasure', to: '/Pleasure' },
+      { label: 'For your pleasure', to: '/pleasure' },
    ];
 
    const current = pages.find((p) => p.to === location.pathname)?.label || 'Menu';

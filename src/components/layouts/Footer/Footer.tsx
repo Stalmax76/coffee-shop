@@ -24,7 +24,7 @@ export const Footer = () => {
                      <NavLink to="our-coffee">Our coffee</NavLink>
                   </div>
                   <div className="footer__item">
-                     <NavLink to="Pleasure">For your pleasure</NavLink>
+                     <NavLink to="pleasure">For your pleasure</NavLink>
                   </div>
                </div>
             </div>

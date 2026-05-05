@@ -14,7 +14,7 @@ export const DesktopNav = () => {
                <NavLink to="our-coffee">Our coffee</NavLink>
             </li>
             <li className="desktop-nav__item">
-               <NavLink to="Pleasure">For your pleasure</NavLink>
+               <NavLink to="pleasure">For your pleasure</NavLink>
             </li>
          </ul>
       </nav>

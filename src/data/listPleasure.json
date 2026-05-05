@@ -1,0 +1,86 @@
+[
+   {
+      "id": 101,
+      "image": "@img/home/products/03.webp",
+      "title": "BRAZIL Santos Bourbon 1 kg",
+      "price": 7.29,
+      "country": "Brazil"
+   },
+   {
+      "id": 102,
+      "image": "@img/home/products/03.webp",
+      "title": "BRAZIL Cerrado Fine Cup 500g",
+      "price": 5.89,
+      "country": "Brazil"
+   },
+   {
+      "id": 103,
+      "image": "@img/home/products/03.webp",
+      "title": "BRAZIL Mogiana Dark Roast 250g",
+      "price": 4.99,
+      "country": "Brazil"
+   },
+   {
+      "id": 104,
+      "image": "@img/home/products/03.webp",
+      "title": "KENYA Kirinyaga Peaberry 1 kg",
+      "price": 8.49,
+      "country": "Kenya"
+   },
+   {
+      "id": 105,
+      "image": "@img/home/products/03.webp",
+      "title": "KENYA Mount Kenya Estate 500g",
+      "price": 6.19,
+      "country": "Kenya"
+   },
+   {
+      "id": 106,
+      "image": "@img/home/products/03.webp",
+      "title": "KENYA Nyeri Medium Roast 250g",
+      "price": 4.59,
+      "country": "Kenya"
+   },
+   {
+      "id": 107,
+      "image": "@img/home/products/03.webp",
+      "title": "COLOMBIA Huila Excelso 1 kg",
+      "price": 8.79,
+      "country": "Columbia"
+   },
+   {
+      "id": 108,
+      "image": "@img/home/products/03.webp",
+      "title": "COLOMBIA Medellin Supremo 500g",
+      "price": 6.39,
+      "country": "Columbia"
+   },
+   {
+      "id": 109,
+      "image": "@img/home/products/03.webp",
+      "title": "COLOMBIA Tolima Organic 250g",
+      "price": 5.19,
+      "country": "Columbia"
+   },
+   {
+      "id": 110,
+      "image": "@img/home/products/03.webp",
+      "title": "BRAZIL Yellow Bourbon 1 kg",
+      "price": 7.59,
+      "country": "Brazil"
+   },
+   {
+      "id": 111,
+      "image": "@img/home/products/03.webp",
+      "title": "KENYA AA Plus Premium 500g",
+      "price": 6.49,
+      "country": "Kenya"
+   },
+   {
+      "id": 112,
+      "image": "@img/home/products/03.webp",
+      "title": "COLOMBIA Narino Specialty 500g",
+      "price": 6.89,
+      "country": "Columbia"
+   }
+]

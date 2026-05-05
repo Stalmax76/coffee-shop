@@ -15,15 +15,23 @@ type Product = {
 type Props = {
    products: Product[];
 };
-
+const searchebleFields: (keyof Product)[] = ['title', 'country', 'price'];
 export const OurCoffeeSection: React.FC<Props> = ({ products }) => {
    const [search, setSearch] = useState('');
    const [activeTab, setActiveTab] = useState('');
 
    const filtered = useMemo(() => {
+      const s = search.toLowerCase();
+
       return products
          .filter((p) => (activeTab ? p.country.toLowerCase() === activeTab : true))
-         .filter((p) => (search ? p.title.toLowerCase().includes(search.toLowerCase()) : true));
+         .filter((p) => {
+            if (!search) return true;
+            return searchebleFields.some((field) => {
+               const value = String(p[field]).toLowerCase();
+               return value.includes(s);
+            });
+         });
    }, [products, search, activeTab]);
 
    return (

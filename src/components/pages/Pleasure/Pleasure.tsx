@@ -1,14 +1,9 @@
-import img from '@img/ourCoffee/girl.jpg?url';
-import imgCard from '@img/ourCoffee/product.webp?url';
 import { HeaderPage } from '@components/layouts/HeaderPage';
+import headerBg from '@img/pleasure/bg .webp?url';
 import { PageDescription } from '@components/content/PageDescription';
+import img from '@img/pleasure/cup.webp?url';
 import { OurCoffeeSection } from '@components/content/OurCoffeeSection';
-import productsRaw from '@data/listCards.json';
-
-const products = productsRaw.map((p) => ({
-   ...p,
-   image: imgCard,
-}));
+import productsRaw from '@data/listPleasure.json';
 
 const textParagraphs = [
    'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.',
@@ -16,16 +11,21 @@ const textParagraphs = [
    'As greatly removed calling pleased improve an. Last ask him cold feelmet spot shy want. Children me laughing we prospect answered followed. At it went is song that held help face.',
 ];
 
-export const OurCoffee = () => {
+const products = productsRaw.map((p) => ({
+   ...p,
+   image: img,
+}));
+
+export const Pleasure = () => {
    return (
-      <section className="ourCoffee">
-         <HeaderPage title="Our Coffee" />
+      <section className="pleasure">
+         <HeaderPage title="For your pleasure" background={headerBg} />
          <PageDescription
             text={textParagraphs}
             title="About our beans"
             decor
             image={img}
-            alt="image alt"
+            alt="image the cup of coffee"
          />
          <OurCoffeeSection products={products} />
       </section>
