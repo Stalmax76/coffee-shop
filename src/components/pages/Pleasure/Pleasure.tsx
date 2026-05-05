@@ -27,7 +27,7 @@ export const Pleasure = () => {
             image={img}
             alt="image the cup of coffee"
          />
-         <OurCoffeeSection products={products} />
+         <OurCoffeeSection products={products} parentPath="pleasure" />
       </section>
    );
 };

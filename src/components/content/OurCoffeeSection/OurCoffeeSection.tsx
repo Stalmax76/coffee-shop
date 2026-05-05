@@ -4,19 +4,21 @@ import { Tabs } from '@components/UI/Tabs';
 import { ProductCard } from '@components/content/ProductCard';
 import './_ourCoffeeSection.scss';
 
-type Product = {
+export type Product = {
    id: number;
    title: string;
    country: string;
    price: number;
    image: string;
+   description?: string | string[];
 };
 
 type Props = {
    products: Product[];
+   parentPath?: string;
 };
 const searchebleFields: (keyof Product)[] = ['title', 'country', 'price'];
-export const OurCoffeeSection: React.FC<Props> = ({ products }) => {
+export const OurCoffeeSection: React.FC<Props> = ({ products, parentPath }) => {
    const [search, setSearch] = useState('');
    const [activeTab, setActiveTab] = useState('');
 
@@ -62,7 +64,7 @@ export const OurCoffeeSection: React.FC<Props> = ({ products }) => {
                      country={item.country}
                      price={item.price}
                      image={item.image}
-                     link={`/products/${item.id}`}
+                     link={`/${parentPath}/${item.id}`}
                   />
                ))}
             </div>
