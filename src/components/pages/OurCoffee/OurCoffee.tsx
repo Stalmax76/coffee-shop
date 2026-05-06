@@ -1,19 +1,12 @@
 import { useParams } from 'react-router-dom';
-import img from '@img/ourCoffee/girl.jpg?url';
-import imgCard from '@img/ourCoffee/product.webp?url';
 import { HeaderPage } from '@components/layouts/HeaderPage';
 import { PageDescription } from '@components/content/PageDescription';
 import { OurCoffeeSection } from '@components/content/OurCoffeeSection';
+import { ProductDetails } from '@components/content/ProductDetails';
+import img from '@img/ourCoffee/girl.jpg?url';
+import imgCard from '@img/ourCoffee/product.webp?url';
+import type { Product } from '@typesLocal/product';
 import productsRaw from '@data/listCards.json';
-
-type Product = {
-   id: number;
-   title: string;
-   country: string;
-   price: number;
-   image: string;
-   description?: string | string[];
-};
 
 const products = productsRaw.map((p) => ({
    ...p,
@@ -49,7 +42,11 @@ export const OurCoffee = () => {
          </>
       );
    } else if (product) {
-      content = <h1 style={{ color: 'red' }}>hello</h1>;
+      content = (
+         <>
+            <ProductDetails />
+         </>
+      );
    } else {
       content = <h1>Product not found</h1>;
    }

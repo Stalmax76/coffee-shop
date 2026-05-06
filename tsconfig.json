@@ -1,4 +1,14 @@
 {
+   "compilerOptions": {
+      "baseUrl": "./src",
+      "paths": {
+         "@img/*": ["assets/images/*"],
+         "@styles/*": ["styles/*"],
+         "@components/*": ["components/*"],
+         "@data/*": ["data/*"],
+         "@typesLocal/*": ["types/*"]
+      }
+   },
    "files": [],
    "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
 }

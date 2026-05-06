@@ -1,10 +1,13 @@
+import { useParams } from 'react-router-dom';
 import { HeaderPage } from '@components/layouts/HeaderPage';
-import headerBg from '@img/pleasure/bg .webp?url';
 import { PageDescription } from '@components/content/PageDescription';
-import img from '@img/pleasure/cup.webp?url';
 import { OurCoffeeSection } from '@components/content/OurCoffeeSection';
-import productsRaw from '@data/listPleasure.json';
+import { ProductDeatails } from '@components/content/ProductDetails';
+import img from '@img/pleasure/cup.webp?url';
+import headerBg from '@img/pleasure/bg .webp?url';
+import type { Product } from '../../../types/product';
 
+import productsRaw from '@data/listPleasure.json';
 const textParagraphs = [
    'Extremity sweetness difficult behaviour he of. On disposal of as landlord horrible.',
    'Afraid at highly months do things on at. Situation recommend objection do intentionso questions. ',
