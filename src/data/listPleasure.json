@@ -4,83 +4,143 @@
       "image": "@img/home/products/03.webp",
       "title": "BRAZIL Santos Bourbon 1 kg",
       "price": 7.29,
-      "country": "Brazil"
+      "country": "Brazil",
+      "description": [
+         "A classic Brazilian Santos Bourbon with a naturally sweet and smooth profile.",
+         "Expect notes of milk chocolate, roasted nuts, and a soft caramel finish.",
+         "Perfect for espresso lovers who enjoy a creamy, low-acidity cup."
+      ]
    },
    {
       "id": 102,
       "image": "@img/home/products/03.webp",
       "title": "BRAZIL Cerrado Fine Cup 500g",
       "price": 5.89,
-      "country": "Brazil"
+      "country": "Brazil",
+      "description": [
+         "Cerrado Fine Cup offers a balanced and clean Brazilian flavor experience.",
+         "Taste notes include cocoa, almond, and a hint of dried fruit sweetness.",
+         "Ideal for both filter brewing and moka pot."
+      ]
    },
    {
       "id": 103,
       "image": "@img/home/products/03.webp",
       "title": "BRAZIL Mogiana Dark Roast 250g",
       "price": 4.99,
-      "country": "Brazil"
+      "country": "Brazil",
+      "description": [
+         "A bold dark roast from the Mogiana region with a rich, intense character.",
+         "Expect dark chocolate, toasted caramel, and a smoky finish.",
+         "Perfect for strong espresso and milk-based drinks."
+      ]
    },
    {
       "id": 104,
       "image": "@img/home/products/03.webp",
       "title": "KENYA Kirinyaga Peaberry 1 kg",
       "price": 8.49,
-      "country": "Kenya"
+      "country": "Kenya",
+      "description": [
+         "Kirinyaga Peaberry is known for its bright acidity and vibrant fruit notes.",
+         "Flavors of blackcurrant, citrus zest, and floral undertones dominate the cup.",
+         "Excellent for pour-over and light-roast enthusiasts."
+      ]
    },
    {
       "id": 105,
       "image": "@img/home/products/03.webp",
       "title": "KENYA Mount Kenya Estate 500g",
       "price": 6.19,
-      "country": "Kenya"
+      "country": "Kenya",
+      "description": [
+         "A premium estate coffee with a juicy, wine-like Kenyan profile.",
+         "Expect raspberry, grapefruit, and subtle herbal notes.",
+         "Perfect for V60, Chemex, and Aeropress."
+      ]
    },
    {
       "id": 106,
       "image": "@img/home/products/03.webp",
       "title": "KENYA Nyeri Medium Roast 250g",
       "price": 4.59,
-      "country": "Kenya"
+      "country": "Kenya",
+      "description": [
+         "A balanced medium roast from Nyeri with a clean, refreshing finish.",
+         "Flavors include red berries, lime, and floral sweetness.",
+         "Ideal for manual brewing and everyday filter coffee."
+      ]
    },
    {
       "id": 107,
       "image": "@img/home/products/03.webp",
       "title": "COLOMBIA Huila Excelso 1 kg",
       "price": 8.79,
-      "country": "Columbia"
+      "country": "Columbia",
+      "description": [
+         "Huila Excelso offers a silky body with a naturally sweet aroma.",
+         "Taste notes include caramel, almond, and gentle citrus brightness.",
+         "A versatile coffee suitable for both espresso and filter brewing."
+      ]
    },
    {
       "id": 108,
       "image": "@img/home/products/03.webp",
       "title": "COLOMBIA Medellin Supremo 500g",
       "price": 6.39,
-      "country": "Columbia"
+      "country": "Columbia",
+      "description": [
+         "A smooth and aromatic Colombian coffee with a balanced flavor profile.",
+         "Expect cocoa, honey, and soft fruit sweetness.",
+         "Perfect for French press and slow morning brews."
+      ]
    },
    {
       "id": 109,
       "image": "@img/home/products/03.webp",
       "title": "COLOMBIA Tolima Organic 250g",
       "price": 5.19,
-      "country": "Columbia"
+      "country": "Columbia",
+      "description": [
+         "An organic Colombian coffee grown in the Tolima region.",
+         "Flavors include caramel, cocoa nibs, and subtle tropical fruit.",
+         "Great for eco-conscious coffee lovers who enjoy clean, natural flavors."
+      ]
    },
    {
       "id": 110,
       "image": "@img/home/products/03.webp",
       "title": "BRAZIL Yellow Bourbon 1 kg",
       "price": 7.59,
-      "country": "Brazil"
+      "country": "Brazil",
+      "description": [
+         "Yellow Bourbon is a premium Brazilian variety known for its sweetness.",
+         "Expect honey, hazelnut, and soft chocolate notes.",
+         "Perfect for espresso and milk drinks thanks to its creamy body."
+      ]
    },
    {
       "id": 111,
       "image": "@img/home/products/03.webp",
       "title": "KENYA AA Plus Premium 500g",
       "price": 6.49,
-      "country": "Kenya"
+      "country": "Kenya",
+      "description": [
+         "A high-grade Kenyan AA coffee with exceptional clarity and brightness.",
+         "Flavors of blackcurrant, citrus, and floral sweetness.",
+         "Ideal for specialty brewing methods."
+      ]
    },
    {
       "id": 112,
       "image": "@img/home/products/03.webp",
       "title": "COLOMBIA Narino Specialty 500g",
       "price": 6.89,
-      "country": "Columbia"
+      "country": "Columbia",
+      "description": [
+         "A specialty-grade coffee from the high mountains of Nariño.",
+         "Expect caramel sweetness, citrus acidity, and a clean finish.",
+         "Perfect for pour-over and light-roast fans."
+      ]
    }
 ]

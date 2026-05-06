@@ -6,6 +6,7 @@ import { ProductDetails } from '@components/content/ProductDetails';
 import img from '@img/ourCoffee/girl.jpg?url';
 import imgCard from '@img/ourCoffee/product.webp?url';
 import type { Product } from '@typesLocal/product';
+
 import productsRaw from '@data/listCards.json';
 
 const products = productsRaw.map((p) => ({
@@ -42,11 +43,7 @@ export const OurCoffee = () => {
          </>
       );
    } else if (product) {
-      content = (
-         <>
-            <ProductDetails />
-         </>
-      );
+      content = <ProductDetails product={product} />;
    } else {
       content = <h1>Product not found</h1>;
    }

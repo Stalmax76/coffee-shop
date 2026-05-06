@@ -4,83 +4,143 @@
       "image": "@img/home/products/03.webp",
       "title": "AROMISTICO Coffee 1 kg",
       "price": 6.99,
-      "country": "Brazil"
+      "country": "Brazil",
+      "description": [
+         "Aromistico is a smooth Brazilian blend with a naturally sweet profile and a velvety body.",
+         "Expect notes of roasted nuts, milk chocolate, and a gentle caramel finish.",
+         "Perfect for espresso lovers who enjoy a balanced, everyday cup."
+      ]
    },
    {
       "id": 2,
       "image": "@img/home/products/03.webp",
       "title": "SEGAFREDO Intermezzo 1 kg",
       "price": 7.49,
-      "country": "Brazil"
+      "country": "Brazil",
+      "description": [
+         "A bold and energetic Brazilian roast crafted for those who prefer intensity.",
+         "Rich crema, deep cocoa tones, and a slightly spicy aftertaste.",
+         "Ideal for cappuccino and latte due to its strong flavor structure."
+      ]
    },
    {
       "id": 3,
       "image": "@img/home/products/03.webp",
       "title": "KENYA AA Premium 500g",
       "price": 5.99,
-      "country": "Kenya"
+      "country": "Kenya",
+      "description": [
+         "Kenya AA Premium is known for its bright acidity and vibrant fruit-forward profile.",
+         "Expect juicy notes of blackcurrant, citrus zest, and floral undertones.",
+         "A refreshing cup perfect for pour-over or Chemex brewing."
+      ]
    },
    {
       "id": 4,
       "image": "@img/home/products/03.webp",
       "title": "KENYA Safari Roast 250g",
       "price": 4.79,
-      "country": "Kenya"
+      "country": "Kenya",
+      "description": [
+         "Safari Roast delivers a lively Kenyan character with a crisp, clean finish.",
+         "Flavors of red berries, grapefruit, and subtle herbal hints.",
+         "Excellent choice for filter coffee enthusiasts."
+      ]
    },
    {
       "id": 5,
       "image": "@img/home/products/03.webp",
       "title": "COLOMBIA Supremo 1 kg",
       "price": 8.25,
-      "country": "Columbia"
+      "country": "Columbia",
+      "description": [
+         "Colombia Supremo offers a silky body with a naturally sweet aroma.",
+         "Taste notes include caramel, almond, and gentle citrus brightness.",
+         "A versatile coffee suitable for both espresso and filter brewing."
+      ]
    },
    {
       "id": 6,
       "image": "@img/home/products/03.webp",
       "title": "COLOMBIA Sierra Nevada 500g",
       "price": 5.49,
-      "country": "Columbia"
+      "country": "Columbia",
+      "description": [
+         "Grown in the high mountains of Sierra Nevada, this coffee is smooth and aromatic.",
+         "Expect flavors of honey, cocoa, and soft tropical fruit.",
+         "Perfect for slow morning brews and French press."
+      ]
    },
    {
       "id": 7,
       "image": "@img/home/products/03.webp",
       "title": "AROMISTICO Coffee 1 kg",
       "price": 6.99,
-      "country": "Brazil"
+      "country": "Brazil",
+      "description": [
+         "Aromistico delivers a comforting Brazilian sweetness with a creamy mouthfeel.",
+         "Notes of hazelnut, cocoa, and toasted sugar dominate the cup.",
+         "Great for espresso machines and moka pots."
+      ]
    },
    {
       "id": 8,
       "image": "@img/home/products/03.webp",
       "title": "SEGAFREDO Intermezzo 1 kg",
       "price": 7.49,
-      "country": "Brazil"
+      "country": "Brazil",
+      "description": [
+         "A strong and expressive blend with a classic Italian-style roast.",
+         "Expect dark chocolate, toasted spices, and a lingering finish.",
+         "Perfect for milk-based drinks and strong espresso shots."
+      ]
    },
    {
       "id": 9,
       "image": "@img/home/products/03.webp",
       "title": "KENYA AA Premium 500g",
       "price": 5.99,
-      "country": "Kenya"
+      "country": "Kenya",
+      "description": [
+         "A bright and aromatic Kenyan coffee with a juicy, wine-like acidity.",
+         "Flavors of blackcurrant, plum, and citrus peel.",
+         "Ideal for V60, Aeropress, and light-roast lovers."
+      ]
    },
    {
       "id": 10,
       "image": "@img/home/products/03.webp",
       "title": "KENYA Safari Roast 250g",
       "price": 4.79,
-      "country": "Kenya"
+      "country": "Kenya",
+      "description": [
+         "Safari Roast is a lively, fruit-forward Kenyan blend.",
+         "Expect raspberry, lime, and subtle floral notes.",
+         "A refreshing choice for manual brewing methods."
+      ]
    },
    {
       "id": 11,
       "image": "@img/home/products/03.webp",
       "title": "COLOMBIA Supremo 1 kg",
       "price": 8.25,
-      "country": "Columbia"
+      "country": "Columbia",
+      "description": [
+         "Supremo beans deliver a balanced Colombian profile with a smooth finish.",
+         "Caramel sweetness, nutty undertones, and a hint of citrus.",
+         "Perfect for both espresso and filter coffee."
+      ]
    },
    {
       "id": 12,
       "image": "@img/home/products/03.webp",
       "title": "COLOMBIA Sierra Nevada 500g",
       "price": 5.49,
-      "country": "Columbia"
+      "country": "Columbia",
+      "description": [
+         "A gentle and aromatic Colombian coffee from the Sierra Nevada region.",
+         "Notes of honey, cocoa nibs, and soft fruit sweetness.",
+         "Great for slow brews and relaxed mornings."
+      ]
    }
 ]
