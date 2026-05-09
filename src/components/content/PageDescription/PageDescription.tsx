@@ -22,7 +22,7 @@ export const PageDescription = ({
       <section className={clsx('page-description', className)}>
          <div className="page-description__container">
             <div className="page-description__image">
-               <img src={image} alt={alt || ''} />
+               <img src={image} loading="lazy" alt={alt || ''} />
             </div>
             <div className="page-description__content">
                <ArticleBlock title={title} paragraphs={text} decor={decor} />

@@ -14,7 +14,7 @@ export const ProductDetails: React.FC<Props> = ({ product }) => {
          <div className="product-details__container">
             <div className="product-details__body">
                <div className="product-details__image">
-                  <img src={image} alt={title} />
+                  <img src={image} loading="lazy" alt={title} />
                </div>
                <div className="product-details__content">
                   <Title tag="h2" color="black" withDecor className="product-details__title">

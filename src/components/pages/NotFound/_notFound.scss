@@ -1,0 +1,10 @@
+.not-found {
+   display: grid;
+   place-items: center;
+   align-content: center;
+   height: 100vh;
+   p {
+      margin-block: 1rem;
+      color: var(--color-black-50);
+   }
+}

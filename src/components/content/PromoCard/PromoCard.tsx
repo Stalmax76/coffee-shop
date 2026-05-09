@@ -14,7 +14,7 @@ export const PromoCard: React.FC<PromoCardProps> = ({ image, title, price, href 
       <article className="promoCard">
          <a href={href}>
             <div className="promoCard__picture">
-               <img src={image} alt="" className="promoCard__image" />
+               <img src={image} loading="lazy" alt="" className="promoCard__image" />
             </div>
          </a>
 

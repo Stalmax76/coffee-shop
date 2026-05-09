@@ -7,7 +7,7 @@ import MainLayout from '@components/layouts/MainLayout';
 const Home = lazy(() => import('@components/pages/Home'));
 const OurCoffee = lazy(() => import('@components/pages/OurCoffee'));
 const Pleasure = lazy(() => import('@components/pages/Pleasure'));
-// const NotFound = lazy(() => import('@components/pages/NotFound'));
+const NotFound = lazy(() => import('@components/pages/NotFound'));
 
 export const AppRouter = () => {
    return (
@@ -19,8 +19,8 @@ export const AppRouter = () => {
                <Route path="our-coffee/:id" element={<OurCoffee />} />
                <Route path="pleasure" element={<Pleasure />} />
                <Route path="pleasure/:id" element={<Pleasure />} />
-               {/* <Route path="*" element={<NotFound />} /> */}
             </Route>
+            <Route path="*" element={<NotFound />} />
          </Routes>
       </Suspense>
    );

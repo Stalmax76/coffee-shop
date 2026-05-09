@@ -26,7 +26,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
    return (
       <article className={clsx('product-card', className)}>
          <Link to={link} className="product-card__link-image">
-            <img src={image} alt={title} className="product-card__image" />
+            <img src={image} loading="lazy" alt={title} className="product-card__image" />
          </Link>
 
          <div className={'product-card__content'}>

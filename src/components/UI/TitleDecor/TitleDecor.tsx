@@ -14,7 +14,7 @@ export const TitleDecor: React.FC<TitleDecorProps> = ({ color }) => {
       <div className={clsx('titleDecor', `titleDecor--${color}`)}>
          <span className={clsx('titleDecor__line', `titleDecor__line--${color}`)} />
          <div className="titleDecor__img">
-            <img src={imgUrl} alt="The grains of coffee" />
+            <img src={imgUrl} loading="lazy" alt="The grains of coffee" />
          </div>
          <span className={clsx('titleDecor__line', `titleDecor__line--${color}`)} />
       </div>

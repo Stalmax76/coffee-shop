@@ -15,7 +15,7 @@ export const Logo: React.FC<LogoProps> = ({ color = 'white', href, className }) 
 
    const content = (
       <div className={clsx('logo', `logo--${color}`, className)}>
-         <img src={imgPath} alt="Logo" className="logo__img" />
+         <img src={imgPath} loading="lazy" alt="Logo" className="logo__img" />
       </div>
    );
 
