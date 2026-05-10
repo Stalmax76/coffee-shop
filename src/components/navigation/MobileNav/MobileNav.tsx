@@ -12,8 +12,14 @@ export const MobileNav = () => {
    ];
 
    const current = pages.find((p) => p.to === location.pathname)?.label || 'Menu';
+   const handleNavigate = (to: string) => {
+      setIsOpen(false);
+      if (to === '/') {
+         window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+   };
    return (
-      <nav className="mobile-nav">
+      <nav className="mobile-nav" aria-label="Mobile navigation">
          <button
             className={`mobile-nav__trigger `}
             aria-expanded={isOpen}
@@ -29,7 +35,7 @@ export const MobileNav = () => {
                   <li key={p.to} className="mobile-nav__item">
                      <NavLink
                         to={p.to}
-                        onClick={() => setIsOpen(false)}
+                        onClick={() => handleNavigate(p.to)}
                         className="mobile-nav__link"
                      >
                         {p.label}

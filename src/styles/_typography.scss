@@ -48,9 +48,6 @@ h6 {
       font-weight: 400;
       margin-inline: auto;
    }
-   p:not(:last-child) {
-      margin-block-end: clamp(var(--space-sm), 0.5rem + 0.5vw, var(--space-md));
-   }
 }
 
 /* Lists */

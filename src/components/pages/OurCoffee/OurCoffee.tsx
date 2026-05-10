@@ -27,30 +27,24 @@ export const OurCoffee = () => {
    const product: Product | undefined =
       id !== undefined ? products.find((p) => p.id === Number(id)) : undefined;
 
-   let content;
-
-   if (!id) {
-      content = (
-         <>
-            <PageDescription
-               text={textParagraphs}
-               title="About our beans"
-               decor
-               image={img}
-               alt="image alt"
-            />
-            <OurCoffeeSection products={products} parentPath="our-coffee" />
-         </>
-      );
-   } else if (product) {
-      content = <ProductDetails product={product} />;
-   } else {
-      content = <h1>Product not found</h1>;
-   }
    return (
-      <section className="ourCoffee">
+      <section className="ourCoffee" aria-labelledby="our-coffee-page">
          <HeaderPage title="Our Coffee" />
-         {content}
+         {!id && (
+            <>
+               <PageDescription
+                  text={textParagraphs}
+                  title="About our beans"
+                  decor
+                  image={img}
+                  alt="The young girl drinks cup of cuffee"
+               />
+               <OurCoffeeSection products={products} parentPath="our-coffee" />
+            </>
+         )}
+         {id && product && <ProductDetails product={product} />}
+
+         {id && !product && <h2 aria-live="polite">Product not found</h2>}
       </section>
    );
 };

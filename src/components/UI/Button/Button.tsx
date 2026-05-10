@@ -7,33 +7,37 @@ import './_button.scss';
 	Buy Coffee
 </Button>; */
 }
-
-type ButtonProps = {
-   children: React.ReactNode;
-   variant?: 'primary' | 'black' | 'white';
-   as?: 'button' | 'a';
-   href?: string;
+type ButtonAsButton = {
+   as?: 'button';
+   type?: 'button' | 'submit' | 'reset';
    onClick?: () => void;
-   className?: string;
    disabled?: boolean;
+   href?: never;
+};
+type ButtonAsLink = {
+   as: 'a';
+   href: string;
+   onClick?: never;
+   disabled?: never;
+   type?: never;
 };
 
+type CommonProps = {
+   children: React.ReactNode;
+   variant?: 'primary' | 'black' | 'white';
+   className?: string;
+};
+
+type ButtonProps = CommonProps & (ButtonAsButton | ButtonAsLink);
 export const Button = ({
    children,
    variant = 'primary',
    as: Tag = 'button',
-   href,
-   onClick,
-   disabled,
    className,
+   ...props
 }: ButtonProps) => {
    return (
-      <Tag
-         href={Tag === 'a' ? href : undefined}
-         onClick={Tag === 'button' ? onClick : undefined}
-         disabled={Tag === 'button' ? disabled : undefined}
-         className={clsx('btn', `btn--${variant}`, className)}
-      >
+      <Tag {...props} className={clsx('btn', `btn--${variant}`, className)}>
          {children}
       </Tag>
    );

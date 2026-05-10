@@ -1,6 +1,6 @@
 .text-block {
    padding-block-start: clamp(var(--space-xs), 0.5rem + 1vw, var(--space-sm));
-   color: black;
+   color: var(--color-black);
 
    &__body {
       display: flex;
@@ -12,5 +12,7 @@
       max-inline-size: 60ch;
       text-align: center;
       padding-inline: clamp(var(--space-xxs), 0.3rem + 1vw, var(--space-sm));
+      display: grid;
+      gap: clamp(var(--space-xs), 0.5rem + 1vw, var(--space-sm));
    }
 }

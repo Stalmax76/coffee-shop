@@ -27,11 +27,6 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
       gap: var(--space-lg);
-      justify-items: center;
-      //   padding-inline: clamp(var(--space-sm) 2vw, var(--space-md));
-      @media (width < 480px) {
-         grid-template-columns: 1fr;
-         //  padding-inline: var(--space-md);
-      }
+      justify-items: stretch;
    }
 }

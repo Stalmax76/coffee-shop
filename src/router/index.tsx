@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { Preloader } from '@components/UI/Preloader';
 import MainLayout from '@components/layouts/MainLayout';
+import ScrollToTop from '@components/content/ScrollToTop';
 
 // Lazy-loaded pages
 const Home = lazy(() => import('@components/pages/Home'));
@@ -12,6 +13,7 @@ const NotFound = lazy(() => import('@components/pages/NotFound'));
 export const AppRouter = () => {
    return (
       <Suspense fallback={<Preloader />}>
+         <ScrollToTop />
          <Routes>
             <Route path="/" element={<MainLayout />}>
                <Route index element={<Home />} />

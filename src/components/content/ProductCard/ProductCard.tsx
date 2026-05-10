@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { Link } from 'react-router-dom';
 import Price from '@components/UI/Price';
 import { Title } from '@components/UI/Title';
+import { motion } from 'framer-motion';
 import imgUrl from '@img/ourCoffee/product.webp?url';
 import './_productCard.scss';
 // import styles from './_style.module.scss';
@@ -24,8 +25,16 @@ export const ProductCard: React.FC<ProductCardProps> = ({
    link = '#',
 }) => {
    return (
-      <article className={clsx('product-card', className)}>
-         <Link to={link} className="product-card__link-image">
+      <motion.article
+         className={clsx('product-card', className)}
+         initial={{ opacity: 0, y: 20 }}
+         whileInView={{ opacity: 1, y: 0 }}
+         viewport={{ once: true, amount: 0.3 }}
+         transition={{ duration: 0.5, ease: 'easeOut' }}
+         aria-label={`
+         Product card: ${title}`}
+      >
+         <Link to={link} className="product-card__link-image" aria-label={`Open ${title} details`}>
             <img src={image} loading="lazy" alt={title} className="product-card__image" />
          </Link>
 
@@ -41,6 +50,6 @@ export const ProductCard: React.FC<ProductCardProps> = ({
                <Price value={price} currency="$" position="after" />
             </div>
          </div>
-      </article>
+      </motion.article>
    );
 };

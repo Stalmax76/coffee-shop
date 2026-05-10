@@ -20,7 +20,7 @@ export const Header = () => {
       <header className={`header ${isScrolled ? 'header--scrolled' : ''}`}>
          <div className="header__container">
             <div className="header__logo">
-               <NavLink to="/">
+               <NavLink to="/" aria-label="Go to homepage">
                   <Logo />
                </NavLink>
             </div>

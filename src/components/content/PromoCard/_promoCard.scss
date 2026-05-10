@@ -1,48 +1,71 @@
 .promoCard {
-	// max-width: 230px;
-	border-radius: var(--radius-md);
-	background-color: var(--color-gray);
-	padding: var(--space-lg);
-	display: grid;
-	gap: var(--space-md);
-	&__picture {
-		aspect-ratio: 4 / 3;
-		overflow: hidden;
-		&:hover .promoCard__image {
-			transform: scale(1.03);
-		}
+   // max-width: 230px;
+   border-radius: var(--radius-md);
+   background-color: var(--color-gray);
+   padding: var(--space-lg);
+   display: grid;
+   gap: var(--space-md);
+   transition:
+      transform var(--transition-normal),
+      box-shadow var(--transition-normal);
+   @media (any-hover: hover) {
+      &:hover {
+         transform: translateY(-3px);
+         box-shadow: 0 6px 24px var(--color-black-25);
+      }
+   }
+   &__picture-link {
+      display: block;
+      cursor: pointer;
+   }
 
-		.promoCard__image {
-			inline-size: 100%;
-			block-size: 100%;
-			object-fit: contain;
-			transition: transform 0.3s ease;
-		}
-	}
-	&__content {
-		display: grid;
-		gap: var(--space-sm);
-		justify-items: end;
-		align-content: end;
-	}
-	&__title {
-		font-size: var(--font-size-sm);
-		font-weight: 700;
-		color: var(--gray-900);
-		line-height: var(--line-height-normal);
-		text-wrap: balance;
-		transition:
-			opacity 0.2s ease,
-			color 0.2s ease;
-		&:hover {
-			opacity: 0.7;
-			color: var(--color-accent);
-		}
-	}
-	&__price {
-		font-weight: 600;
-		font-size: var(--font-size-base);
-		color: var(--gray-900);
-		line-height: var(--line-height-tight);
-	}
+   &__picture {
+      aspect-ratio: 4 / 3;
+      overflow: hidden;
+      border-radius: var(--radius-sm);
+
+      @media (any-hover: hover) {
+         &:hover .promoCard__image {
+            transform: scale(1.03);
+         }
+      }
+
+      .promoCard__image {
+         inline-size: 100%;
+         block-size: 100%;
+         object-fit: contain;
+         object-position: bottom;
+         transition: transform 0.3s ease;
+      }
+   }
+   &__content {
+      display: grid;
+      gap: var(--space-sm);
+      justify-items: end;
+      align-content: end;
+   }
+   &__title-link {
+      text-decoration: none;
+   }
+
+   &__title {
+      font-size: var(--font-size-sm);
+      font-weight: 700;
+      color: var(--gray-900);
+      line-height: var(--line-height-normal);
+      text-wrap: balance;
+      transition:
+         opacity 0.2s ease,
+         color 0.2s ease;
+      &:hover {
+         opacity: 0.7;
+         color: var(--color-accent);
+      }
+   }
+   &__price {
+      font-weight: 600;
+      font-size: var(--font-size-base);
+      color: var(--gray-900);
+      line-height: var(--line-height-tight);
+   }
 }

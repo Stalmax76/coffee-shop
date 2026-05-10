@@ -16,8 +16,8 @@
    }
    &__container {
       display: flex;
-      padding-inline: clamp(var(--container-padding-small), 6vw, var(--container-padding));
       align-items: center;
+      padding-inline: clamp(var(--container-padding-small), 6vw, var(--container-padding));
       gap: clamp(var(--space-lg), 6vw, var(--space-2xl));
       max-width: 850px;
       @media (width < 48em) {

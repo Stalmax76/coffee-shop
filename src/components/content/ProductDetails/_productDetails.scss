@@ -1,6 +1,6 @@
 .product-details {
-   padding-top: clamp(var(--space-lg), 6vw, var(--space-2xl) + 2.5rem);
-   padding-bottom: clamp(var(--space-lg), 6vw, var(--space-lg) + 1.5rem);
+   padding-block: clamp(var(--space-lg), 6vw, var(--space-2xl));
+
    &__container {
       padding-inline: clamp(var(--space-xxs), 2vw, var(--space-sm));
    }
@@ -13,55 +13,57 @@
       flex-shrink: 0;
       width: 50%;
       max-width: 500px;
+      max-height: 500px;
       aspect-ratio: 498 / 355;
+      border-radius: var(--radius-md);
+      overflow: hidden;
 
       img {
          display: block;
          width: 100%;
          height: auto;
          object-fit: cover;
-         border-radius: var(--radius-md);
       }
    }
    &__content {
+      flex: 1;
       display: flex;
       flex-direction: column;
       gap: clamp(var(--space-xs), 6vw, var(--space-md));
       color: var(--color-black);
-      flex: 1;
+   }
+   &__info {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-sm);
    }
 
-   &__row {
+   &__row,
+   &__description {
       display: flex;
       align-items: baseline;
-      gap: var(--space-xs);
+
       font-size: var(--font-size-lg);
       line-height: 1.5;
    }
-   &__description {
-      font-size: var(--font-size-lg);
-      line-height: 1.6;
 
-      // .product-details__label {
-      //    font-weight: 600;
-      //    margin-right: var(--space-xs);
-      //    white-space: nowrap;
-      // }
-   }
    &__label {
       white-space: nowrap;
       font-weight: 600;
-      margin-right: 5px;
    }
    &__value {
       font-weight: 500;
+      p + p {
+         margin-top: var(--space-xxs);
+      }
    }
    @media (width<48em) {
       &__body {
          max-width: 80%;
          flex-direction: column-reverse;
          align-items: center;
-         gap: 30px;
+         gap: var(--space-lg);
+
          margin-inline: auto;
       }
       &__image {

@@ -1,16 +1,30 @@
 import { Title } from '@components/UI/Title';
+import { motion } from 'framer-motion';
 import './_about.scss';
 
 export const About = () => {
    return (
-      <section className="about">
+      <section className="about" id="about">
          <div className="about__container">
-            <div className="about__header">
+            <motion.div
+               className="about__header"
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true, amount: 0.3 }}
+               transition={{ duration: 0.6, ease: 'easeOut' }}
+               aria-labelledby="about-title"
+            >
                <Title withDecor tag="h2" color="black">
                   About Us
                </Title>
-            </div>
-            <div className="about__content">
+            </motion.div>
+            <motion.div
+               className="about__content"
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true, amount: 0.3 }}
+               transition={{ duration: 0.6, ease: 'easeOut', delay: 0.15 }}
+            >
                <div className="about__text text">
                   <p>
                      Extremity sweetness difficult behaviour he of. On disposal of as landlord
@@ -27,7 +41,7 @@ export const About = () => {
                      repair day ladies now.
                   </p>
                </div>
-            </div>
+            </motion.div>
          </div>
       </section>
    );

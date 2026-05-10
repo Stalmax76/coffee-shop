@@ -9,24 +9,24 @@ export const Footer = () => {
          <div className="footer__container">
             <div className="footer__content">
                <div className="footer__logo">
-                  <NavLink to="/">
+                  <NavLink to="/" aria-label="Go to homepage">
                      {' '}
                      <Logo color="black" />
                   </NavLink>
                </div>
-               <div className="footer__items">
-                  <div className="footer__item">
-                     <NavLink to="." end>
+               <ul className="footer__items">
+                  <li className="footer__item">
+                     <NavLink to="/" end>
                         Coffee house
                      </NavLink>
-                  </div>
-                  <div className="footer__item">
+                  </li>
+                  <li className="footer__item">
                      <NavLink to="our-coffee">Our coffee</NavLink>
-                  </div>
-                  <div className="footer__item">
+                  </li>
+                  <li className="footer__item">
                      <NavLink to="pleasure">For your pleasure</NavLink>
-                  </div>
-               </div>
+                  </li>
+               </ul>
             </div>
             <TitleDecor color="black" />
          </div>
