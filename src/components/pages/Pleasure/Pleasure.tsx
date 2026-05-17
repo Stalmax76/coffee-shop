@@ -15,14 +15,13 @@ const textParagraphs = [
    'As greatly removed calling pleased improve an. Last ask him cold feelmet spot shy want. Children me laughing we prospect answered followed. At it went is song that held help face.',
 ];
 
-const products = productsRaw.map((p) => ({
-   ...p,
-   image: img,
-}));
-
 export const Pleasure = () => {
    const params = useParams();
    const id = params.id;
+   const products = productsRaw.map((p) => ({
+      ...p,
+      image: img,
+   }));
 
    const product: Product | undefined =
       id !== undefined ? products.find((p) => p.id === Number(id)) : undefined;
@@ -41,7 +40,7 @@ export const Pleasure = () => {
                   alt="Cup of coffee on the table"
                />
 
-               <OurCoffeeSection products={products} parentPath="/pleasure" />
+               <OurCoffeeSection products={products} parentPath="pleasure" />
             </>
          )}
 

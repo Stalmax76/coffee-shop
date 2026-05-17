@@ -19,8 +19,10 @@ export const AppRouter = () => {
                <Route index element={<Home />} />
                <Route path="our-coffee" element={<OurCoffee />} />
                <Route path="our-coffee/:id" element={<OurCoffee />} />
-               <Route path="pleasure" element={<Pleasure />} />
-               <Route path="pleasure/:id" element={<Pleasure />} />
+               <Route path="pleasure">
+                  <Route index element={<Pleasure />} />
+                  <Route path=":id" element={<Pleasure />} />
+               </Route>
             </Route>
             <Route path="*" element={<NotFound />} />
          </Routes>
