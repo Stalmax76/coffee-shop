@@ -4,7 +4,7 @@ import { PageDescription } from '@components/content/PageDescription';
 import { OurCoffeeSection } from '@components/content/OurCoffeeSection';
 import { ProductDetails } from '@components/content/ProductDetails';
 import img from '@img/pleasure/cup.webp?url';
-import headerBg from '@img/pleasure/bg .webp?url';
+import headerBg from '@img/pleasure/bg.webp?url';
 import type { Product } from '@typesLocal/product';
 
 import productsRaw from '@data/listPleasure.json';

@@ -4,8 +4,8 @@ import { defineConfig } from 'vite';
 
 // https://vite.dev/config/
 export default defineConfig({
-   base: '/coffee-shop/',
    plugins: [react()],
+   base: '/coffee-shop/',
    resolve: {
       alias: {
          '@img': path.resolve(__dirname, './src/assets/images'),
