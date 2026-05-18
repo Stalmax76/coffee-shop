@@ -20,18 +20,19 @@ The project is not commercial — it is a demonstration of my skills in building
 
 ---
 
-
 ## 📸 Screenshots
 
 ### Home Page
+
 ![Home](./src/assets/images/screenshots/main.jpg)
 
 ### Other Page
+
 ![Page](./src/assets/images/screenshots/other_page.png)
 
 ### Product Cards
-![Cards](./src/assets/images/screenshots/block product-cards.png)
 
+![Cards](./src/assets/images/screenshots/block_product-cards.png)
 
 ---
 
@@ -52,3 +53,4 @@ The project is not commercial — it is a demonstration of my skills in building
 ```bash
 npm install
 npm run dev
+```
