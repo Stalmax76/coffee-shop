@@ -2,7 +2,7 @@
 
 A small educational project created to practice **React**, **TypeScript**, **SCSS (BEM)**, **routing**, **animations**, and working with component architecture.
 
-The project is not commercial — it is a demonstration of my skills in building a modern interface, structuring code, and working with UI components.
+The project demonstrates my ability to create clean UI, structure code effectively, and build reusable, scalable components.
 
 ---
 
@@ -36,17 +36,17 @@ The project is not commercial — it is a demonstration of my skills in building
 
 ---
 
-## 🔍Functionality
+## 🔍Features
 
-- Product list view
-- Product search
-- Country filtering
-- Transition animations
-- Dynamic product pages
+- Product list with filtering
+- Search by product name
+- Country‑based filtering
+- Smooth page transitions
+- Dynamic product details
 - Responsive layout
-- Optimized images (WebP)
+- Optimized WebP images
 
----
+## Clean SCSS architecture with BEM
 
 ## 📦 Project launch
 
