@@ -2,10 +2,10 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
    plugins: [react()],
 
-   base: '/coffee-shop/',
+   base: command === 'serve' ? '/' : '/coffee-shop/',
    resolve: {
       alias: {
          '@img': path.resolve(__dirname, './src/assets/images'),
@@ -15,4 +15,4 @@ export default defineConfig({
          '@typesLocal': path.resolve(__dirname, './src/types'),
       },
    },
-});
+}));
