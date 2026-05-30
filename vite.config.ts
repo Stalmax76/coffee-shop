@@ -4,8 +4,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
    plugins: [react()],
-   // Set the base to the repository name so built assets and router
-   // work correctly when deployed to GitHub Pages.
+
    base: '/coffee-shop/',
    resolve: {
       alias: {
