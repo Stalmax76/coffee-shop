@@ -15,7 +15,7 @@ const scrollToAbout = () => {
 
    const start = window.scrollY;
    const end = target.getBoundingClientRect().top + window.scrollY - headerOffSet;
-   const duration = 700;
+   const duration = 300;
    const startTime = performance.now();
 
    const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);

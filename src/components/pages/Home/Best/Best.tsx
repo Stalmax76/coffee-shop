@@ -37,19 +37,19 @@ export const Best = () => {
                   image={imgUrl_1}
                   title="Solimo Coffee Beans 2 kg"
                   price={10.73}
-                  href="#"
+                  href="/our-coffee"
                />
                <PromoCard
                   image={imgUrl_2}
                   title="Solimo Coffee Beans 2 kg"
                   price={10.73}
-                  href="#"
+                  href="/our-coffee"
                />
                <PromoCard
                   image={imgUrl_3}
                   title="Solimo Coffee Beans 2 kg"
                   price={10.73}
-                  href="#"
+                  href="/our-coffee"
                />
             </motion.div>
          </div>
