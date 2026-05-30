@@ -15,7 +15,7 @@ export const AppRouter = () => {
       <Suspense fallback={<Preloader />}>
          <ScrollToTop />
          <Routes>
-            <Route path="/" element={<MainLayout />}>
+            <Route path="." element={<MainLayout />}>
                <Route index element={<Home />} />
                <Route path="our-coffee" element={<OurCoffee />} />
                <Route path="our-coffee/:id" element={<OurCoffee />} />
