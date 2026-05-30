@@ -2,7 +2,7 @@ import imgWhite from '@img/icons/logo.svg?url';
 import imgBlack from '@img/icons/logoBlack.svg?url';
 import clsx from 'clsx';
 // added changes for deployment
-import './_logo-main.scss';
+import './_logo.scss';
 
 type LogoColor = 'white' | 'black';
 type LogoProps = {
