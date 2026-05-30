@@ -4,7 +4,7 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
    plugins: [react()],
-   base: '/coffee-shop/',
+   base: './',
    resolve: {
       alias: {
          '@img': path.resolve(__dirname, './src/assets/images'),
